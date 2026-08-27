@@ -2,7 +2,7 @@ import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
-  site: "https://shuge.example.com",
+  site: "https://novel.342263.com",
   output: "static",
   server: {
     host: "0.0.0.0",
