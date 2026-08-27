@@ -1,0 +1,11 @@
+node_modules
+site/node_modules
+site/dist
+site/.astro
+.git
+.github
+*.md
+.prettierrc
+.prettierignore
+eslint.config.mjs
+package.json
