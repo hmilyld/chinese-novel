@@ -1,20 +1,18 @@
 # Build stage
 FROM node:22-alpine AS builder
 
-RUN corepack enable && corepack prepare pnpm@11.21.0 --activate
-
 WORKDIR /app
 
 # Install site dependencies
-COPY site/package.json site/pnpm-lock.yaml site/
-RUN cd site && pnpm install --frozen-lockfile
+COPY site/package.json site/
+RUN cd site && npm install
 
 # Copy source
 COPY site/ site/
 COPY site-content/ site-content/
 
 # Build site data and static files
-RUN node site/site-build.mjs --full && cd site && pnpm build
+RUN node site/site-build.mjs --full && cd site && npm run build
 
 # Runtime stage
 FROM nginx:alpine
