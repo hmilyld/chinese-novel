@@ -1,0 +1,357 @@
+{
+  "name": "达摩出身传灯传",
+  "bookType": "鬼怪神魔",
+  "chapterCount": 70,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "玉帝降神出世",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "达摩慧辨",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "达摩更名",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "达摩得道",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "问师",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "究问吉祥",
+      "file": "005.md"
+    },
+    {
+      "index": 6,
+      "title": "复问根源",
+      "file": "006.md"
+    },
+    {
+      "index": 7,
+      "title": "多罗圆寂",
+      "file": "007.md"
+    },
+    {
+      "index": 8,
+      "title": "达摩提化本国",
+      "file": "008.md"
+    },
+    {
+      "index": 9,
+      "title": "分立六宗",
+      "file": "009.md"
+    },
+    {
+      "index": 10,
+      "title": "思辟六宗",
+      "file": "010.md"
+    },
+    {
+      "index": 11,
+      "title": "达摩辟有相",
+      "file": "011.md"
+    },
+    {
+      "index": 12,
+      "title": "达摩辟无相",
+      "file": "012.md"
+    },
+    {
+      "index": 13,
+      "title": "达摩定慧宗",
+      "file": "013.md"
+    },
+    {
+      "index": 14,
+      "title": "辟戒行宗",
+      "file": "014.md"
+    },
+    {
+      "index": 15,
+      "title": "辟无得宗",
+      "file": "015.md"
+    },
+    {
+      "index": 16,
+      "title": "辟寂静宗",
+      "file": "016.md"
+    },
+    {
+      "index": 17,
+      "title": "达摩叹六宗",
+      "file": "017.md"
+    },
+    {
+      "index": 18,
+      "title": "异见王毁三宝",
+      "file": "018.md"
+    },
+    {
+      "index": 19,
+      "title": "众臣上建章休毁三宝",
+      "file": "019.md"
+    },
+    {
+      "index": 20,
+      "title": "达摩求见老臣",
+      "file": "020.md"
+    },
+    {
+      "index": 21,
+      "title": "达摩思救国王",
+      "file": "021.md"
+    },
+    {
+      "index": 22,
+      "title": "宗胜潜见国王",
+      "file": "022.md"
+    },
+    {
+      "index": 23,
+      "title": "屈于王辩",
+      "file": "023.md"
+    },
+    {
+      "index": 24,
+      "title": "波罗见国王",
+      "file": "024.md"
+    },
+    {
+      "index": 25,
+      "title": "宗胜捐躯投崖",
+      "file": "025.md"
+    },
+    {
+      "index": 26,
+      "title": "见王差使迎接达师",
+      "file": "026.md"
+    },
+    {
+      "index": 27,
+      "title": "为王忏罪",
+      "file": "027.md"
+    },
+    {
+      "index": 28,
+      "title": "宗胜从容辞诏",
+      "file": "028.md"
+    },
+    {
+      "index": 29,
+      "title": "达摩为王疗病",
+      "file": "029.md"
+    },
+    {
+      "index": 30,
+      "title": "达摩辞王南渡",
+      "file": "030.md"
+    },
+    {
+      "index": 31,
+      "title": "国王海堧饯别",
+      "file": "031.md"
+    },
+    {
+      "index": 32,
+      "title": "达摩计伏蛟龙",
+      "file": "032.md"
+    },
+    {
+      "index": 33,
+      "title": "达摩收伏神虎",
+      "file": "033.md"
+    },
+    {
+      "index": 34,
+      "title": "达摩舟达南海",
+      "file": "034.md"
+    },
+    {
+      "index": 35,
+      "title": "萧昂具表奏君",
+      "file": "035.md"
+    },
+    {
+      "index": 36,
+      "title": "梁王接见达摩",
+      "file": "036.md"
+    },
+    {
+      "index": 37,
+      "title": "梁王舍身事佛",
+      "file": "037.md"
+    },
+    {
+      "index": 38,
+      "title": "梁王自矜功德",
+      "file": "038.md"
+    },
+    {
+      "index": 39,
+      "title": "武帝不悟经义",
+      "file": "039.md"
+    },
+    {
+      "index": 40,
+      "title": "达摩嵩山演教",
+      "file": "040.md"
+    },
+    {
+      "index": 41,
+      "title": "神光弃儒从释",
+      "file": "041.md"
+    },
+    {
+      "index": 42,
+      "title": "神光欲从达摩",
+      "file": "042.md"
+    },
+    {
+      "index": 43,
+      "title": "神光励志求师",
+      "file": "043.md"
+    },
+    {
+      "index": 44,
+      "title": "神光立雪从师",
+      "file": "044.md"
+    },
+    {
+      "index": 45,
+      "title": "神光断臂见志",
+      "file": "045.md"
+    },
+    {
+      "index": 46,
+      "title": "达摩为光改名",
+      "file": "046.md"
+    },
+    {
+      "index": 47,
+      "title": "慧可请问法印",
+      "file": "047.md"
+    },
+    {
+      "index": 48,
+      "title": "岳神听师讲经",
+      "file": "048.md"
+    },
+    {
+      "index": 49,
+      "title": "国王思慕达摩",
+      "file": "049.md"
+    },
+    {
+      "index": 50,
+      "title": "少林寺访师",
+      "file": "050.md"
+    },
+    {
+      "index": 51,
+      "title": "志欲西归",
+      "file": "051.md"
+    },
+    {
+      "index": 52,
+      "title": "初授慧可",
+      "file": "052.md"
+    },
+    {
+      "index": 53,
+      "title": "江北龙吟虎啸",
+      "file": "053.md"
+    },
+    {
+      "index": 54,
+      "title": "嵩山鹤唳猿啼",
+      "file": "054.md"
+    },
+    {
+      "index": 55,
+      "title": "灯幡迎接达摩",
+      "file": "055.md"
+    },
+    {
+      "index": 56,
+      "title": "土神望问岳帝",
+      "file": "056.md"
+    },
+    {
+      "index": 57,
+      "title": "岳帝挽留达摩",
+      "file": "057.md"
+    },
+    {
+      "index": 58,
+      "title": "达摩再授慧可",
+      "file": "058.md"
+    },
+    {
+      "index": 59,
+      "title": "达摩三授慧可",
+      "file": "059.md"
+    },
+    {
+      "index": 60,
+      "title": "达摩游千圣寺",
+      "file": "060.md"
+    },
+    {
+      "index": 61,
+      "title": "杨太守谒达摩",
+      "file": "061.md"
+    },
+    {
+      "index": 62,
+      "title": "太守为师除难",
+      "file": "062.md"
+    },
+    {
+      "index": 63,
+      "title": "武帝迎请达摩",
+      "file": "063.md"
+    },
+    {
+      "index": 64,
+      "title": "宋云趋朝复命",
+      "file": "064.md"
+    },
+    {
+      "index": 65,
+      "title": "撰碑赐谥",
+      "file": "065.md"
+    },
+    {
+      "index": 66,
+      "title": "达师指慧逃走",
+      "file": "066.md"
+    },
+    {
+      "index": 67,
+      "title": "罗汉赴会",
+      "file": "067.md"
+    },
+    {
+      "index": 68,
+      "title": "慧可逃走",
+      "file": "068.md"
+    },
+    {
+      "index": 69,
+      "title": "神光白日升天",
+      "file": "069.md"
+    }
+  ]
+}

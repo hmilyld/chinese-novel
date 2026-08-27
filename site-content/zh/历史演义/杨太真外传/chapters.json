@@ -1,0 +1,12 @@
+{
+  "name": "杨太真外传",
+  "bookType": "历史演义",
+  "chapterCount": 1,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "原文",
+      "file": "000.md"
+    }
+  ]
+}

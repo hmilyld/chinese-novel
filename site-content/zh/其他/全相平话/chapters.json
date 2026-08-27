@@ -1,0 +1,82 @@
+{
+  "name": "全相平话",
+  "bookType": "其他",
+  "chapterCount": 15,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "武王伐纣书卷上",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "武王伐纣书卷中",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "武王伐纣书卷下",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "乐毅图齐七国春秋后集卷上",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "乐毅图齐七国春秋后集卷中",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "乐毅图齐七国春秋后集卷下",
+      "file": "005.md"
+    },
+    {
+      "index": 6,
+      "title": "秦并六国平话卷上",
+      "file": "006.md"
+    },
+    {
+      "index": 7,
+      "title": "秦并六国平话卷中",
+      "file": "007.md"
+    },
+    {
+      "index": 8,
+      "title": "秦并六国平话卷下",
+      "file": "008.md"
+    },
+    {
+      "index": 9,
+      "title": "前汉书续集卷上",
+      "file": "009.md"
+    },
+    {
+      "index": 10,
+      "title": "前汉书续集卷中",
+      "file": "010.md"
+    },
+    {
+      "index": 11,
+      "title": "前汉书续集卷下",
+      "file": "011.md"
+    },
+    {
+      "index": 12,
+      "title": "三国志平话卷上",
+      "file": "012.md"
+    },
+    {
+      "index": 13,
+      "title": "三国志平话卷中",
+      "file": "013.md"
+    },
+    {
+      "index": 14,
+      "title": "三国志平话卷下",
+      "file": "014.md"
+    }
+  ]
+}

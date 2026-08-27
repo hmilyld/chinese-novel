@@ -1,0 +1,27 @@
+{
+  "name": "唐阙史",
+  "bookType": "其他",
+  "chapterCount": 4,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "序",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "卷上",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "卷下",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "逸文",
+      "file": "003.md"
+    }
+  ]
+}

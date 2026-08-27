@@ -1,0 +1,107 @@
+{
+  "name": "山海经",
+  "bookType": "鬼怪神魔",
+  "chapterCount": 20,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "说 明",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "南山经第一",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "西山经第二",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "北山经第三",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "东山经第四",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "中山经第五",
+      "file": "005.md"
+    },
+    {
+      "index": 6,
+      "title": "海外南经第六",
+      "file": "006.md"
+    },
+    {
+      "index": 7,
+      "title": "海外西经第七",
+      "file": "007.md"
+    },
+    {
+      "index": 8,
+      "title": "海外北经第八",
+      "file": "008.md"
+    },
+    {
+      "index": 9,
+      "title": "海外东经第九",
+      "file": "009.md"
+    },
+    {
+      "index": 10,
+      "title": "海内南经第十",
+      "file": "010.md"
+    },
+    {
+      "index": 11,
+      "title": "海内西经第十一",
+      "file": "011.md"
+    },
+    {
+      "index": 12,
+      "title": "海内北经第十二",
+      "file": "012.md"
+    },
+    {
+      "index": 13,
+      "title": "海内东经第十三",
+      "file": "013.md"
+    },
+    {
+      "index": 14,
+      "title": "大荒东经第十四",
+      "file": "014.md"
+    },
+    {
+      "index": 15,
+      "title": "大荒南经第十五",
+      "file": "015.md"
+    },
+    {
+      "index": 16,
+      "title": "大荒西经第十六",
+      "file": "016.md"
+    },
+    {
+      "index": 17,
+      "title": "大荒北经第十七",
+      "file": "017.md"
+    },
+    {
+      "index": 18,
+      "title": "海内经第十八",
+      "file": "018.md"
+    },
+    {
+      "index": 19,
+      "title": "西汉刘秀《上山海经表》",
+      "file": "019.md"
+    }
+  ]
+}

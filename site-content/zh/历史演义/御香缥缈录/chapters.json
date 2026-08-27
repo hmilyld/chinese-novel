@@ -1,0 +1,182 @@
+{
+  "name": "御香缥缈录",
+  "bookType": "历史演义",
+  "chapterCount": 35,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "第一回 遍地金沙",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "第二回 太后下诏备火车",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "第三回 火夫与司机之幸运",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "第四回 铁路官员",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "第五回 随驾大臣",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "第六回 鸾舆",
+      "file": "005.md"
+    },
+    {
+      "index": 6,
+      "title": "第七回 接驾",
+      "file": "006.md"
+    },
+    {
+      "index": 7,
+      "title": "第八回 御衣库",
+      "file": "007.md"
+    },
+    {
+      "index": 8,
+      "title": "第九回 御膳房",
+      "file": "008.md"
+    },
+    {
+      "index": 9,
+      "title": "第十回 光绪帝",
+      "file": "009.md"
+    },
+    {
+      "index": 10,
+      "title": "第十一回 女官和宫女",
+      "file": "010.md"
+    },
+    {
+      "index": 11,
+      "title": "第十二回 列车上之小朝廷",
+      "file": "011.md"
+    },
+    {
+      "index": 12,
+      "title": "第十三回 途中",
+      "file": "012.md"
+    },
+    {
+      "index": 13,
+      "title": "第十四回 袁世凯",
+      "file": "013.md"
+    },
+    {
+      "index": 14,
+      "title": "第十五回 田野之欣赏",
+      "file": "014.md"
+    },
+    {
+      "index": 15,
+      "title": "第十六回 老佛爷安抵故乡",
+      "file": "015.md"
+    },
+    {
+      "index": 16,
+      "title": "第十七回 盛京之宫院",
+      "file": "016.md"
+    },
+    {
+      "index": 17,
+      "title": "第十八回 列朝帝王之遗物",
+      "file": "017.md"
+    },
+    {
+      "index": 18,
+      "title": "第十九回 狐仙塔",
+      "file": "018.md"
+    },
+    {
+      "index": 19,
+      "title": "第二十回 射围",
+      "file": "019.md"
+    },
+    {
+      "index": 20,
+      "title": "第二十一回 舐犊情深",
+      "file": "020.md"
+    },
+    {
+      "index": 21,
+      "title": "第二十二回 黎园别部",
+      "file": "021.md"
+    },
+    {
+      "index": 22,
+      "title": "第二十三回 回程",
+      "file": "022.md"
+    },
+    {
+      "index": 23,
+      "title": "第二十四回 桑叶的奇迹",
+      "file": "023.md"
+    },
+    {
+      "index": 24,
+      "title": "第二十五回 各业艺工",
+      "file": "024.md"
+    },
+    {
+      "index": 25,
+      "title": "第二十六回 御犬厩",
+      "file": "025.md"
+    },
+    {
+      "index": 26,
+      "title": "第二十七回 内府浮华",
+      "file": "026.md"
+    },
+    {
+      "index": 27,
+      "title": "第二十八回 湖上浮宫",
+      "file": "027.md"
+    },
+    {
+      "index": 28,
+      "title": "第二十九回 御医",
+      "file": "028.md"
+    },
+    {
+      "index": 29,
+      "title": "第三十回 仁爱与公正",
+      "file": "029.md"
+    },
+    {
+      "index": 30,
+      "title": "第三十一回 朝荷迎日",
+      "file": "030.md"
+    },
+    {
+      "index": 31,
+      "title": "第三十二回 太后的梳妆台",
+      "file": "031.md"
+    },
+    {
+      "index": 32,
+      "title": "第三十三回 上苑奇葩",
+      "file": "032.md"
+    },
+    {
+      "index": 33,
+      "title": "第三十四回 玉体横陈",
+      "file": "033.md"
+    },
+    {
+      "index": 34,
+      "title": "第三十五回 异兆",
+      "file": "034.md"
+    }
+  ]
+}

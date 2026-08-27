@@ -1,0 +1,37 @@
+{
+  "name": "十二笑",
+  "bookType": "其他",
+  "chapterCount": 6,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "第一笑　痴愚女遇痴愚汉",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "第二笑　昧心友赚昧心朋",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "第三笑　忧愁婿偏成快活",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "第四笑　快活翁偏惹忧愁",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "第五笑　溺爱子新丧邀串戏",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "第六笑  赌身奴翻局替烧汤",
+      "file": "005.md"
+    }
+  ]
+}

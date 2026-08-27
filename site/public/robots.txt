@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /zh-TW/read/
+Disallow: /zh/read/
+
+Sitemap: https://shuge.example.com/sitemap-index.xml

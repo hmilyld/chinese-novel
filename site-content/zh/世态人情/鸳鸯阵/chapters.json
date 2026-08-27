@@ -1,0 +1,67 @@
+{
+  "name": "鸳鸯阵",
+  "bookType": "世态人情",
+  "chapterCount": 12,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "第一回 抛情友诱入佳境",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "第二回 赴厢屋两处情浓",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "第三回 两处姻缘一处欢",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "第回四 俏书生初探闺房",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "第五回 两黄花一处凋谢",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "第六回 浪荡强合悄佳人",
+      "file": "005.md"
+    },
+    {
+      "index": 6,
+      "title": "第七回 两骚人舱中绸缪花",
+      "file": "006.md"
+    },
+    {
+      "index": 7,
+      "title": "第八回 淫荡女去父归西",
+      "file": "007.md"
+    },
+    {
+      "index": 8,
+      "title": "第九回 一鼎终归欢情浓",
+      "file": "008.md"
+    },
+    {
+      "index": 9,
+      "title": "第十回 男欢女爱亲娘窥",
+      "file": "009.md"
+    },
+    {
+      "index": 10,
+      "title": "第十一回 贤媪割爱偿宿缘",
+      "file": "010.md"
+    },
+    {
+      "index": 11,
+      "title": "第十二回 洞房幽春色无限",
+      "file": "011.md"
+    }
+  ]
+}

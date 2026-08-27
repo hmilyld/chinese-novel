@@ -1,0 +1,250 @@
+---
+import { getCollection } from "astro:content";
+import type { Locale } from "../../lib/data";
+import Base from "../../layouts/Base.astro";
+import { translate, getPathByLocale } from "../../i18n/translate";
+import { BOOK_TYPE_LABEL } from "../../lib/data";
+
+export function getStaticPaths() {
+  return (
+    ["zh", "zh-TW"] as Locale[]
+  ).map((locale) => ({
+    params: { lang: locale },
+    props: { locale },
+  }));
+}
+
+const { locale } = Astro.props;
+const t = translate(locale);
+const langPath = (p: string) => getPathByLocale(p, locale, locale);
+const base = `/${locale}`;
+
+const books = (await getCollection("books")).sort((a, b) =>
+  a.data.name.localeCompare(b.data.name, "zh")
+);
+const types = [...new Set(books.map((b) => b.data.bookType))];
+
+const activeType = Astro.url.searchParams.get("type") ?? "";
+const currentType = "";
+const filtered = books;
+---
+
+<Base locale={locale} title={t("library.title")}>
+  <section class="lib-head">
+    <h1>{t("library.title")}</h1>
+    <p class="lib-sub">{books.length} {t("hero.statBooks")}</p>
+  </section>
+
+  <div class="lib-typebar" role="navigation" aria-label={t("home.types")}>
+    <a href={base + "/library"} data-type="">
+      {t("library.all")}
+    </a>
+    {types.map((ty) => (
+      <a
+        data-type={ty}
+        href={`${base}/library?type=${encodeURIComponent(ty)}`}
+      >
+        {ty}
+      </a>
+    ))}
+  </div>
+
+  <div class="lib-search">
+    <label class="visually-hidden" for="lib-q">{t("search.placeholder")}</label>
+    <input
+      id="lib-q"
+      type="search"
+      placeholder={t("library.searchPlaceholder")}
+      autocomplete="off"
+    />
+  </div>
+
+  <p class="lib-count" id="lib-count" aria-live="polite">
+    {t("library.resultCount").replace("{n}", String(filtered.length))}
+  </p>
+
+  <ul class="lib-grid" id="lib-grid">
+    {filtered.map((b) => (
+      <li data-type={b.data.bookType}>
+        <a class="lib-card" href={`${base}/book/${b.data.slug}`}>
+          <span class="card-dyn">{b.data.dynasty}</span>
+          <span class="card-name">{b.data.name}</span>
+          <span class="card-meta">
+            <span>{b.data.bookType}</span>
+            <span>·</span>
+            <span>{b.data.chapterCount}</span>
+          </span>
+        </a>
+      </li>
+    ))}
+  </ul>
+
+  <div class="lib-empty" id="lib-empty" hidden>
+    {t("search.empty")}
+  </div>
+</Base>
+
+<script>
+  const input = document.getElementById("lib-q") as HTMLInputElement;
+  const grid = document.getElementById("lib-grid") as HTMLElement;
+  const empty = document.getElementById("lib-empty") as HTMLElement;
+  const count = document.getElementById("lib-count") as HTMLElement;
+  const cards = Array.from(grid.querySelectorAll("li")) as HTMLElement[];
+  const countBase = count.textContent!;
+  const pills = Array.from(
+    document.querySelectorAll(".lib-typebar a")
+  ) as HTMLAnchorElement[];
+
+  const params = new URLSearchParams(location.search);
+  let activeType = params.get("type") ?? "";
+
+  function apply() {
+    const q = input.value.trim().toLowerCase();
+    let shown = 0;
+    for (const li of cards) {
+      const typeOk = !activeType || li.dataset.type === activeType;
+      const text = li.textContent?.toLowerCase() ?? "";
+      const qOk = !q || text.includes(q);
+      const ok = typeOk && qOk;
+      li.style.display = ok ? "" : "none";
+      if (ok) shown++;
+    }
+    empty.hidden = shown > 0;
+    count.textContent = countBase.replace(/[0-9]+/, String(shown));
+    for (const a of pills) {
+      a.classList.toggle(
+        "is-active",
+        (a.dataset.type ?? "") === activeType
+      );
+    }
+  }
+
+  input.addEventListener("input", apply);
+  apply();
+</script>
+
+<style>
+  .lib-head {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: var(--space-6) var(--space-5) var(--space-3);
+  }
+  .lib-head h1 {
+    font-size: var(--fs-3xl);
+  }
+  .lib-sub {
+    color: var(--text-dim);
+  }
+  .lib-typebar {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 var(--space-5) var(--space-4);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .lib-typebar a {
+    padding: 0.3rem 0.9rem;
+    border: var(--hairline) var(--line);
+    border-radius: 999px;
+    font-family: var(--font-display);
+    font-size: var(--fs-sm);
+    color: var(--text-dim);
+  }
+  .lib-typebar a:hover {
+    color: var(--text);
+    border-color: var(--gold);
+  }
+  .lib-typebar a.is-active {
+    background: var(--cinnabar);
+    border-color: var(--cinnabar);
+    color: var(--paper);
+    box-shadow: 0 0 12px rgba(179, 54, 47, 0.25);
+  }
+  .lib-search {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 var(--space-5) var(--space-3);
+  }
+  .lib-search input {
+    width: 100%;
+    background: var(--bg-panel);
+    border: var(--hairline) var(--line);
+    border-radius: var(--radius);
+    color: var(--text);
+    padding: 0.7rem 1rem;
+    font-size: var(--fs-md);
+    font-family: var(--font-body);
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  }
+  .lib-search input:focus-visible {
+    border-color: var(--cinnabar);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(179, 54, 47, 0.15);
+  }
+  .lib-count {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0.2rem var(--space-5) var(--space-3);
+    color: var(--text-dim);
+    font-size: var(--fs-sm);
+  }
+  .lib-grid {
+    list-style: none;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 var(--space-5) var(--space-6);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: var(--space-4);
+  }
+  .lib-card {
+    display: block;
+    padding: var(--space-4);
+    border: var(--hairline) var(--line);
+    border-radius: var(--radius);
+    background: var(--bg-panel);
+    min-height: 150px;
+    transition: box-shadow 0.25s ease, border-color 0.25s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .lib-card:hover {
+    border-color: var(--gold);
+    box-shadow: var(--shadow-card);
+  }
+  .card-dyn {
+    position: absolute;
+    top: var(--space-3);
+    right: var(--space-3);
+    writing-mode: vertical-rl;
+    font-family: var(--font-latin-display);
+    font-style: italic;
+    color: var(--gold);
+    font-size: var(--fs-sm);
+  }
+  .card-name {
+    display: block;
+    font-family: var(--font-display);
+    font-size: var(--fs-xl);
+    margin-bottom: 0.4rem;
+    color: var(--text);
+  }
+  .card-meta {
+    display: flex;
+    gap: 0.3rem;
+    color: var(--text-dim);
+    font-size: var(--fs-xs);
+  }
+  .lib-empty {
+    text-align: center;
+    color: var(--text-dim);
+    padding: var(--space-6);
+    font-family: var(--font-display);
+  }
+  @media (max-width: 600px) {
+    .lib-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

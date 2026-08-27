@@ -1,0 +1,1005 @@
+---
+import { getCollection } from "astro:content";
+import type { Locale } from "../../lib/data";
+import Base from "../../layouts/Base.astro";
+import { translate } from "../../i18n/translate";
+import { buildAuthors } from "../../lib/data";
+
+export function getStaticPaths() {
+    return (["zh", "zh-TW"] as Locale[]).map((locale) => ({
+        params: { lang: locale },
+        props: { locale },
+    }));
+}
+
+const { locale } = Astro.props;
+const t = translate(locale);
+const base = `/${locale}`;
+
+const books = await getCollection("books");
+const featured = books.find((b) => b.data.slug === "红楼梦") ?? books[0];
+const featuredTitle = "第一回 甄士隐梦幻识通灵　贾雨村风尘怀闺秀";
+const coup = featuredTitle
+    .replace(/^第[一二三四五六七八九十百]+回\s*/, "")
+    .split(/[\s\u3000\xa0]+/)
+    .filter(Boolean);
+
+const types = [
+    "世态人情",
+    "鬼怪神魔",
+    "历史演义",
+    "英雄传奇",
+    "谴责公案",
+    "传奇小说",
+    "其他",
+];
+const typeAccents: Record<string, string> = {
+    世态人情: "var(--cinnabar)",
+    鬼怪神魔: "var(--jade)",
+    历史演义: "var(--gold)",
+    英雄传奇: "var(--cinnabar-bright)",
+    谴责公案: "var(--gold-dim)",
+    传奇小说: "var(--jade-dim)",
+    其他: "var(--text-dim)",
+};
+const statsCount = books.length;
+const statsChapters = books.reduce((n, b) => n + b.data.chapterCount, 0);
+const statsWordsWan = Math.round(
+    books.reduce((n, b) => n + b.data.words, 0) / 10000,
+);
+const intlLocale = locale === "zh" ? "zh-CN" : "zh-TW";
+const shelf = books
+    .slice()
+    .sort((a, b) => b.data.words - a.data.words)
+    .slice(0, 40);
+const authors = buildAuthors(books).slice(0, 24);
+
+const coupHref = `${base}/read/${featured.data.slug}/0`;
+const featuredPool: typeof books = [featured];
+for (const ty of [
+    "世态人情",
+    "鬼怪神魔",
+    "历史演义",
+    "英雄传奇",
+    "谴责公案",
+    "传奇小说",
+]) {
+    const top = books
+        .filter((b) => b.data.bookType === ty && b.data.slug !== featured.data.slug)
+        .sort((a, b) => b.data.words - a.data.words)[0];
+    if (top) featuredPool.push(top);
+}
+
+const opening =
+    locale === "zh-TW"
+        ? "「世事如夢，誰解其中味？」"
+        : "「满纸荒唐言，一把辛酸泪。都云作者痴，谁解其中味？」";
+const featuredIntro =
+    locale === "zh-TW"
+        ? "女媧補天棄置的一塊頑石，隨神瑛侍者降入凡塵，歷盡人間冷暖。"
+        : "女娲补天弃置的一块顽石，随神瑛侍者下凡，历尽人间悲欢。一个簪缨世族由盛而衰的家族故事，写尽世态人情。";
+---
+
+<Base locale={locale} title={t("site.subtitle")}>
+    {/* ── hero: ink wash scroll ── */}
+    <section class="hero">
+        <div class="hero-wash" aria-hidden="true"></div>
+        <div class="hero-inner anim-fade-up">
+            <div class="hero-caption anim-fade-in anim-delay-1">
+                {t("site.subtitle")}
+            </div>
+            <h1 class="hero-title anim-fade-up anim-delay-2">
+                {t("site.name")}
+            </h1>
+            <div class="hero-stats anim-fade-up anim-delay-3">
+                <div class="stat">
+                    <span class="stat-num">{statsCount}</span>
+                    <span class="stat-label">{t("hero.statBooks")}</span>
+                </div>
+                <div class="stat-sep" aria-hidden="true"></div>
+                <div class="stat">
+                    <span class="stat-num"
+                        >{statsChapters.toLocaleString(intlLocale)}</span
+                    >
+                    <span class="stat-label">{t("hero.statChapters")}</span>
+                </div>
+                <div class="stat-sep" aria-hidden="true"></div>
+                <div class="stat">
+                    <span class="stat-num"
+                        >{statsWordsWan.toLocaleString(intlLocale)}</span
+                    >
+                    <span class="stat-label">
+                        {t("hero.statWords")}万
+                    </span>
+                </div>
+            </div>
+            <a
+                class="hero-cta anim-fade-up anim-delay-4"
+                href={`${base}/library`}
+            >
+                <span>{t("hero.read")}</span>
+                <span class="cta-seal" aria-hidden="true">卷</span>
+            </a>
+        </div>
+
+        <div class="hero-coup anim-ink anim-delay-3" aria-label={featuredTitle}>
+            <div class="coup-frame">
+                {
+                    coup.length === 2 ? (
+                        <>
+                            <div class="coup-half">{coup[0]}</div>
+                            <div class="coup-sep" aria-hidden="true" />
+                            <div class="coup-half">{coup[1]}</div>
+                        </>
+                    ) : (
+                        <div class="coup-half">{featuredTitle}</div>
+                    )
+                }
+            </div>
+            <a class="coup-cta" href={coupHref}>
+                <span class="coup-book">{featured.data.name}</span>
+                <span class="coup-seal" aria-hidden="true">阅</span>
+            </a>
+        </div>
+    </section>
+
+    {/* ── opening: ink inscription ── */}
+    <section class="opening anim-fade-up" aria-label={t("home.quote")}>
+        <div class="opening-frame">
+            <div class="opening-mark" aria-hidden="true">卷首</div>
+            <p class="opening-text">{opening}</p>
+            <div class="opening-mark" aria-hidden="true">卷首</div>
+        </div>
+    </section>
+
+    {/* ── featured book ── */}
+    <section class="featured anim-fade-up">
+        <div class="sec-head">
+            <h2>{t("home.featured")}</h2>
+        </div>
+        <div class="featured-stage">
+            {featuredPool.map((b) => {
+                const intro =
+                    b.data.slug === featured.data.slug
+                        ? featuredIntro
+                        : b.data.intro;
+                return (
+                    <div class="featured-card">
+                        <div class="featured-spine" aria-hidden="true">
+                            <div class="spine-stitch" aria-hidden="true" />
+                            <span class="fspine-name">{b.data.name}</span>
+                            <span class="fspine-dyn">{b.data.dynasty}</span>
+                        </div>
+                        <div class="featured-main">
+                            <div class="featured-kicker">
+                                {b.data.author} · {b.data.bookType}
+                            </div>
+                            <a
+                                class="featured-title-link"
+                                href={`${base}/book/${b.data.slug}`}
+                            >
+                                <h3 class="featured-title">{b.data.name}</h3>
+                            </a>
+                            <p class="featured-intro">{intro}</p>
+                            <div class="featured-cta">
+                                <a
+                                    class="read-btn"
+                                    href={`${base}/read/${b.data.slug}/0`}
+                                >
+                                    <span>{t("hero.read")}</span>
+                                    <span
+                                        class="read-seal"
+                                        aria-hidden="true"
+                                    >
+                                        開卷
+                                    </span>
+                                </a>
+                                <span class="featured-meta">
+                                    {b.data.chapterCount}
+                                    {t("hero.statChapters")} · 约{" "}
+                                    {Math.round(b.data.words / 10000)} 万字
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                );
+            })}
+        </div>
+    </section>
+
+    {/* ── types: genre blocks with varied accents ── */}
+    <section class="types anim-fade-up">
+        <div class="sec-head">
+            <h2>{t("home.types")}</h2>
+            <a class="sec-more" href={`${base}/library`}>
+                {t("library.title")} →
+            </a>
+        </div>
+        <div class="types-grid">
+            {
+                types.map((ty, i) => {
+                    const count = books.filter(
+                        (b) => b.data.bookType === ty,
+                    ).length;
+                    const accent = typeAccents[ty] ?? "var(--gold)";
+                    return (
+                        <a
+                            class="type-tile"
+                            href={`${base}/library?type=${encodeURIComponent(ty)}`}
+                            style={`--tile-accent: ${accent}; animation-delay: ${0.1 + i * 0.06}s`}
+                        >
+                            <span class="tile-zh">{ty}</span>
+                            <span class="tile-count">{count}</span>
+                            <span class="tile-bar" aria-hidden="true" />
+                        </a>
+                    );
+                })
+            }
+        </div>
+    </section>
+
+    {/* ── authors: seal gallery ── */}
+    <section class="authors-band anim-fade-up">
+        <div class="sec-head">
+            <h2>{t("home.authors")}</h2>
+            <a class="sec-more" href={`${base}/author`}>
+                {t("nav.authors")} →
+            </a>
+        </div>
+        <div class="authors-grid">
+            {
+                authors.map((a, i) => {
+                    const size = Math.min(6.5, 4 + a.bookCount * 0.25);
+                    return (
+                        <a
+                            class="author-seal anim-stamp"
+                            href={`${base}/author/${encodeURIComponent(a.slug)}`}
+                            style={`--seal-size: ${size}rem; animation-delay: ${0.2 + i * 0.08}s`}
+                        >
+                            <span class="aseal-char" aria-hidden="true">
+                                {a.name.charAt(0)}
+                            </span>
+                            <span class="aseal-name">{a.name}</span>
+                            <span class="aseal-dyn">{a.dynasty || "未知"}</span>
+                            <span class="aseal-count">{a.bookCount} 部</span>
+                        </a>
+                    );
+                })
+            }
+        </div>
+    </section>
+
+    {/* ── shelf: realistic bookshelf ── */}
+    <section class="shelf anim-fade-up">
+        <div class="sec-head">
+            <h2>{t("home.shelf")}</h2>
+        </div>
+        <div class="shelf-rack">
+            <div class="shelf-surface" aria-hidden="true"></div>
+            <div class="shelf-grid">
+                {
+                    shelf.map((b) => (
+                        <a
+                            class="spine"
+                            href={`${base}/book/${b.data.slug}`}
+                            title={b.data.name}
+                        >
+                            <span class="spine-type">{b.data.bookType}</span>
+                            <span class="spine-name">{b.data.name}</span>
+                            <span class="spine-dyn">{b.data.dynasty}</span>
+                        </a>
+                    ))
+                }
+            </div>
+        </div>
+    </section>
+    <script is:inline>
+        (function () {
+            function shuffleShow(el, keep, cls) {
+                var nodes = Array.prototype.slice.call(el.children);
+                for (var i = nodes.length - 1; i > 0; i--) {
+                    var j = Math.floor(Math.random() * (i + 1));
+                    var tmp = nodes[i];
+                    nodes[i] = nodes[j];
+                    nodes[j] = tmp;
+                }
+                for (var k = 0; k < nodes.length; k++)
+                    el.appendChild(nodes[k]);
+                for (var m = keep; m < nodes.length; m++)
+                    el.removeChild(nodes[m]);
+                el.classList.add(cls);
+            }
+            var stage = document.querySelector(".featured-stage");
+            if (stage) shuffleShow(stage, 1, "is-shuffled");
+            var grid = document.querySelector(".authors-grid");
+            if (grid) {
+                shuffleShow(grid, 12, "is-shuffled");
+                grid.querySelectorAll(".author-seal").forEach(function (
+                    s,
+                    i
+                ) {
+                    s.style.animationDelay = (0.2 + i * 0.06).toFixed(2) + "s";
+                });
+            }
+            var shelfGrid = document.querySelector(".shelf-grid");
+            if (shelfGrid) shuffleShow(shelfGrid, 26, "is-shuffled");
+        })();
+    </script>
+</Base>
+
+<style>
+    /* ── hero ──────────────────────────────────────────────── */
+    .hero {
+        position: relative;
+        padding: var(--space-8) var(--space-5) var(--space-7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--space-7);
+        min-height: 72vh;
+    }
+    .hero-wash {
+        position: absolute;
+        inset: 0;
+        background:
+            radial-gradient(
+                ellipse 80% 60% at 20% 40%,
+                rgba(42, 37, 24, 0.7) 0%,
+                transparent 70%
+            ),
+            radial-gradient(
+                ellipse 60% 50% at 80% 30%,
+                rgba(26, 24, 18, 0.5) 0%,
+                transparent 60%
+            ),
+            linear-gradient(
+                160deg,
+                var(--ink-wash-1) 0%,
+                var(--ink-wash-2) 40%,
+                var(--ink-wash-3) 100%
+            );
+        z-index: 0;
+    }
+    .hero-inner {
+        position: relative;
+        z-index: 1;
+        max-width: 520px;
+    }
+    .hero-caption {
+        font-family: var(--font-latin-display);
+        font-style: italic;
+        letter-spacing: 0.12em;
+        color: var(--cinnabar);
+        margin-bottom: var(--space-3);
+        font-size: var(--fs-md);
+    }
+    .hero-title {
+        font-size: var(--fs-hero);
+        line-height: 1.05;
+        letter-spacing: 0.08em;
+        font-family: var(--font-display);
+        margin-bottom: var(--space-6);
+        color: var(--paper);
+    }
+    .hero-stats {
+        display: flex;
+        align-items: center;
+        gap: var(--space-5);
+        margin-bottom: var(--space-6);
+    }
+    .stat-num {
+        display: block;
+        font-family: var(--font-latin-display);
+        font-size: var(--fs-2xl);
+        color: var(--gold);
+        line-height: 1.1;
+    }
+    .stat-label {
+        font-size: var(--fs-sm);
+        color: var(--text-dark-dim);
+    }
+    .stat-sep {
+        width: 1px;
+        height: 2rem;
+        background: var(--stroke-dark);
+    }
+    .hero-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.7rem;
+        padding: 0.7rem 1.4rem;
+        border: var(--hairline) var(--gold);
+        border-radius: var(--radius);
+        font-family: var(--font-display);
+        font-size: var(--fs-md);
+        color: var(--paper);
+        transition:
+            background-color 0.25s ease,
+            border-color 0.25s ease,
+            box-shadow 0.25s ease;
+    }
+    .hero-cta:hover {
+        background: var(--cinnabar);
+        border-color: var(--cinnabar);
+        box-shadow: var(--shadow-glow-cinnabar);
+    }
+    .cta-seal {
+        width: 1.4rem;
+        height: 1.4rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--cinnabar);
+        color: var(--paper);
+        border-radius: 3px;
+        font-size: 0.85rem;
+        transition:
+            background-color 0.25s ease,
+            color 0.25s ease;
+    }
+    .hero-cta:hover .cta-seal {
+        background: var(--paper);
+        color: var(--cinnabar);
+    }
+
+    /* hero couplet */
+    .hero-coup {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-4);
+    }
+    .coup-frame {
+        border: var(--hairline) var(--gold-dim);
+        border-radius: var(--radius);
+        background: rgba(23, 21, 15, 0.6);
+        backdrop-filter: blur(4px);
+        padding: var(--space-5) var(--space-4);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-3);
+        min-width: 200px;
+        box-shadow: var(--shadow-deep);
+    }
+    .coup-half {
+        writing-mode: vertical-rl;
+        font-family: var(--font-display);
+        font-size: var(--fs-xl);
+        line-height: 1.3;
+        letter-spacing: 0.08em;
+        color: var(--paper);
+        text-align: center;
+        max-height: 320px;
+    }
+    .coup-sep {
+        width: 1px;
+        height: 2.5rem;
+        background: var(--cinnabar);
+    }
+    .coup-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        font-family: var(--font-display);
+    }
+    .coup-book {
+        font-size: var(--fs-lg);
+        color: var(--paper);
+    }
+    .coup-seal {
+        width: 1.6rem;
+        height: 1.6rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--cinnabar);
+        color: var(--paper);
+        border-radius: 3px;
+        font-size: 0.95rem;
+    }
+
+    @media (max-width: 820px) {
+        .hero {
+            flex-direction: column;
+            min-height: auto;
+            padding: var(--space-7) var(--space-5) var(--space-6);
+        }
+        .hero-coup {
+            order: -1;
+        }
+        .coup-frame {
+            flex-direction: row;
+            gap: var(--space-4);
+            min-width: auto;
+        }
+        .coup-half {
+            writing-mode: horizontal-tb;
+            font-size: var(--fs-lg);
+            max-height: none;
+        }
+    }
+    @media (max-width: 480px) {
+        .hero-stats {
+            gap: var(--space-4);
+        }
+        .stat-num {
+            font-size: var(--fs-xl);
+        }
+        .stat-label {
+            font-size: var(--fs-xs);
+        }
+        .hero-title {
+            font-size: clamp(2rem, 9vw, 2.6rem);
+        }
+        /* couplet halves stack vertically — two side-by-side overflow small phones */
+        .coup-frame {
+            flex-direction: column;
+            gap: var(--space-2);
+            padding: var(--space-4) var(--space-3);
+        }
+        .coup-half {
+            font-size: var(--fs-md);
+        }
+    }
+
+    /* ── opening ───────────────────────────────────────────── */
+    .opening {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: var(--space-7) var(--space-5);
+    }
+    .opening-frame {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--space-5);
+        padding: var(--space-6) var(--space-5);
+        border: var(--hairline) var(--line);
+        border-radius: var(--radius);
+        background: var(--bg-panel);
+        position: relative;
+    }
+    .opening-frame::before,
+    .opening-frame::after {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 1px;
+        background: var(--gold-dim);
+    }
+    .opening-frame::before {
+        top: -1px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .opening-frame::after {
+        bottom: -1px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .opening-mark {
+        writing-mode: vertical-rl;
+        font-family: var(--font-display);
+        font-size: var(--fs-xs);
+        letter-spacing: 0.3em;
+        color: var(--cinnabar);
+        opacity: 0.6;
+    }
+    .opening-text {
+        font-family: var(--font-display);
+        font-size: var(--fs-lg);
+        color: var(--text);
+        text-align: center;
+        line-height: 1.8;
+        max-width: 46ch;
+        margin: 0;
+    }
+    @media (max-width: 700px) {
+        .opening-frame {
+            flex-direction: column;
+            gap: var(--space-3);
+        }
+        .opening-mark {
+            writing-mode: horizontal-tb;
+        }
+    }
+
+    /* ── featured ──────────────────────────────────────────── */
+    .featured {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: var(--space-6) var(--space-5);
+    }
+    .featured-stage .featured-card:nth-child(n + 2) {
+        display: none;
+    }
+    .featured-stage.is-shuffled .featured-card {
+        display: flex;
+    }
+    .featured-card {
+        display: flex;
+        gap: var(--space-6);
+        border: var(--hairline) var(--gold-dim);
+        border-radius: var(--radius);
+        background: var(--bg-panel);
+        padding: var(--space-6);
+        box-shadow: var(--shadow-card);
+        transition: box-shadow 0.3s ease;
+    }
+    .featured-card:hover {
+        box-shadow: var(--shadow-deep);
+    }
+    .featured-spine {
+        flex: 0 0 auto;
+        width: 80px;
+        min-height: 260px;
+        border: var(--hairline) var(--gold);
+        border-radius: 3px 10px 10px 3px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: var(--space-5) 0;
+        background: var(--bg-panel-2);
+        position: relative;
+    }
+    .spine-stitch {
+        position: absolute;
+        left: 8px;
+        top: 12px;
+        bottom: 12px;
+        width: 2px;
+        background: repeating-linear-gradient(
+            to bottom,
+            var(--gold-dim) 0px,
+            var(--gold-dim) 6px,
+            transparent 6px,
+            transparent 12px
+        );
+        opacity: 0.5;
+    }
+    .fspine-name {
+        writing-mode: vertical-rl;
+        font-family: var(--font-display);
+        font-size: var(--fs-xl);
+        letter-spacing: 0.12em;
+        color: var(--text);
+        max-height: 180px;
+    }
+    .fspine-dyn {
+        font-family: var(--font-latin-display);
+        font-style: italic;
+        color: var(--gold);
+        font-size: var(--fs-xs);
+    }
+    .featured-main {
+        flex: 1;
+    }
+    .featured-kicker {
+        font-family: var(--font-latin-display);
+        font-style: italic;
+        letter-spacing: 0.08em;
+        color: var(--cinnabar);
+        font-size: var(--fs-sm);
+        margin-bottom: var(--space-2);
+    }
+    .featured-title {
+        font-size: var(--fs-3xl);
+        margin-bottom: var(--space-3);
+    }
+    .featured-title-link {
+        display: inline-block;
+        color: inherit;
+    }
+    .featured-title-link:hover .featured-title {
+        color: var(--cinnabar);
+    }
+    .featured-intro {
+        color: var(--text);
+        font-size: var(--fs-md);
+        margin-bottom: var(--space-4);
+        max-width: 60ch;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .featured-cta {
+        display: flex;
+        align-items: center;
+        gap: var(--space-4);
+        flex-wrap: wrap;
+    }
+    .featured-cta .read-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        padding: 0.6rem 1.3rem;
+        background: var(--cinnabar);
+        color: var(--paper);
+        border-radius: var(--radius);
+        font-family: var(--font-display);
+        font-size: var(--fs-md);
+        border: var(--hairline) var(--cinnabar);
+        transition:
+            background-color 0.25s ease,
+            color 0.25s ease,
+            box-shadow 0.25s ease;
+    }
+    .featured-cta .read-btn:hover {
+        background: var(--paper);
+        color: var(--cinnabar);
+        box-shadow: var(--shadow-glow-cinnabar);
+    }
+    .featured-meta {
+        color: var(--text-dim);
+        font-size: var(--fs-sm);
+    }
+
+    @media (max-width: 700px) {
+        .featured-card {
+            flex-direction: column;
+        }
+        .featured-spine {
+            width: 100%;
+            min-height: 60px;
+            flex-direction: row;
+            padding: 0 var(--space-4);
+        }
+        .fspine-name {
+            writing-mode: horizontal-tb;
+            font-size: var(--fs-lg);
+            max-height: none;
+        }
+        .spine-stitch {
+            display: none;
+        }
+    }
+
+    /* ── types ─────────────────────────────────────────────── */
+    .types {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: var(--space-6) var(--space-5);
+    }
+    .types-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: var(--space-4);
+    }
+    .type-tile {
+        padding: var(--space-4) var(--space-5);
+        border: var(--hairline) var(--line);
+        border-radius: var(--radius);
+        background: var(--bg-panel);
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        position: relative;
+        overflow: hidden;
+        transition:
+            box-shadow 0.25s ease,
+            border-color 0.25s ease;
+        animation: fadeSlideUp 0.6s ease-out both;
+    }
+    .type-tile:hover {
+        box-shadow: var(--shadow-card);
+        border-color: var(--tile-accent, var(--gold));
+    }
+    .tile-zh {
+        font-family: var(--font-display);
+        font-size: var(--fs-xl);
+    }
+    .tile-count {
+        margin-top: 0.4rem;
+        font-family: var(--font-latin-display);
+        color: var(--tile-accent, var(--gold));
+        font-size: var(--fs-md);
+    }
+    .tile-bar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: var(--tile-accent, var(--gold));
+        opacity: 0;
+        transition: opacity 0.25s ease;
+    }
+    .type-tile:hover .tile-bar {
+        opacity: 1;
+    }
+
+    /* ── authors: seal gallery ─────────────────────────────── */
+    .authors-band {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: var(--space-6) var(--space-5);
+    }
+  .authors-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: var(--space-4);
+    justify-items: center;
+  }
+  .authors-grid:not(.is-shuffled) .author-seal:nth-child(n + 13) {
+    display: none;
+  }
+    .author-seal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.2rem;
+        padding: var(--space-4) var(--space-3);
+        background: var(--cinnabar);
+        color: var(--paper);
+        border-radius: 3px;
+        width: var(--seal-size, 4.5rem);
+        height: var(--seal-size, 4.5rem);
+        min-width: 110px;
+        min-height: 110px;
+        justify-content: center;
+        position: relative;
+        transition:
+            box-shadow 0.25s ease,
+            transform 0.25s ease;
+        box-shadow:
+            0 0 0 2px var(--bg),
+            0 0 0 3px var(--cinnabar);
+    }
+    .author-seal:hover {
+        box-shadow:
+            0 0 0 2px var(--bg),
+            0 0 0 3px var(--cinnabar),
+            0 12px 26px rgba(179, 54, 47, 0.32),
+            0 4px 10px rgba(0, 0, 0, 0.14);
+        transform: translateY(-5px) scale(1.04);
+    }
+    .author-seal:hover .aseal-char {
+        opacity: 0.55;
+    }
+    .author-seal:hover .aseal-name {
+        text-shadow: 0 1px 6px rgba(0, 0, 0, 0.25);
+    }
+    .aseal-char {
+        font-family: var(--font-display);
+        font-size: 1.8rem;
+        line-height: 1;
+        opacity: 0.3;
+        position: absolute;
+        top: 6px;
+        right: 8px;
+    }
+    .aseal-name {
+        font-family: var(--font-display);
+        font-size: var(--fs-md);
+        color: var(--paper);
+        letter-spacing: 0.1em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+    }
+    .aseal-dyn {
+        font-family: var(--font-latin-display);
+        font-style: italic;
+        color: rgba(236, 227, 206, 0.6);
+        font-size: var(--fs-xs);
+    }
+    .aseal-count {
+        color: rgba(236, 227, 206, 0.5);
+        font-size: var(--fs-xs);
+    }
+
+  @media (max-width: 900px) {
+    .authors-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  @media (max-width: 600px) {
+    .authors-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-3);
+    }
+    .author-seal {
+      width: 100%;
+      max-width: 110px;
+      min-width: 0;
+      min-height: 96px;
+    }
+  }
+
+    /* ── shelf ─────────────────────────────────────────────── */
+    .shelf {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: var(--space-6) var(--space-5) var(--space-8);
+    }
+    .shelf-rack {
+        position: relative;
+    }
+    .shelf-surface {
+        position: absolute;
+        bottom: 0;
+        left: -8px;
+        right: -8px;
+        height: 8px;
+        background: linear-gradient(
+            to bottom,
+            var(--ink-3) 0%,
+            var(--stroke-dark) 50%,
+            var(--ink) 100%
+        );
+        border-radius: 0 0 2px 2px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+  .shelf-grid {
+    display: grid;
+    grid-template-columns: repeat(13, 64px);
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 8px;
+  }
+  .shelf-grid:not(.is-shuffled) .spine:nth-child(n + 27) {
+    display: none;
+  }
+    .spine {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.3rem;
+        padding: var(--space-3) 2px;
+        border: var(--hairline) var(--line);
+        border-radius: 2px 5px 5px 2px;
+        background: var(--bg-panel);
+        transition:
+            box-shadow 0.25s ease,
+            border-color 0.25s ease,
+            transform 0.25s ease;
+        min-height: 140px;
+        justify-content: space-between;
+    }
+    .spine:hover {
+        border-color: var(--gold);
+        box-shadow: var(--shadow-card);
+        transform: translateY(-4px);
+        z-index: 2;
+    }
+    .spine-type {
+        font-size: var(--fs-xs);
+        color: var(--text-dim);
+        letter-spacing: 0.15em;
+        writing-mode: vertical-rl;
+        max-height: 100px;
+    }
+    .spine-name {
+        writing-mode: vertical-rl;
+        font-family: var(--font-display);
+        font-size: var(--fs-sm);
+        color: var(--text);
+        letter-spacing: 0.08em;
+        max-height: 120px;
+        line-height: 1.2;
+    }
+    .spine-dyn {
+        font-size: var(--fs-xs);
+        color: var(--gold);
+    }
+    @media (max-width: 920px) {
+        .shelf-grid {
+            grid-template-columns: repeat(auto-fill, 64px);
+        }
+    }
+    @media (max-width: 600px) {
+        /* mobile: simplify — show only 8 spines (2 rows) */
+        .shelf-grid .spine:nth-child(n + 9) {
+            display: none;
+        }
+        .spine {
+            min-height: 120px;
+        }
+    }
+</style>

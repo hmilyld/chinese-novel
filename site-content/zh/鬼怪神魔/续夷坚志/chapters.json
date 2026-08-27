@@ -1,0 +1,32 @@
+{
+  "name": "续夷坚志",
+  "bookType": "鬼怪神魔",
+  "chapterCount": 5,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "序和跋",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "卷一",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "卷二",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "卷三",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "卷四",
+      "file": "004.md"
+    }
+  ]
+}

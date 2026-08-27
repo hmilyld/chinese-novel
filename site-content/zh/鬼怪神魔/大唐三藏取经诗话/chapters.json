@@ -1,0 +1,97 @@
+{
+  "name": "大唐三藏取经诗话",
+  "bookType": "鬼怪神魔",
+  "chapterCount": 18,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "□□□□□□第一 [题原缺]",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "行程遇猴行者处第二",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "入大梵天王宫第三",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "入香山寺第四",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "过狮子林及树人国第五",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "入九龙池处第七",
+      "file": "005.md"
+    },
+    {
+      "index": 6,
+      "title": "［题原缺］第八",
+      "file": "006.md"
+    },
+    {
+      "index": 7,
+      "title": "入鬼子母国处第九",
+      "file": "007.md"
+    },
+    {
+      "index": 8,
+      "title": "经过女人国处第十",
+      "file": "008.md"
+    },
+    {
+      "index": 9,
+      "title": "入王母池之处第十一",
+      "file": "009.md"
+    },
+    {
+      "index": 10,
+      "title": "入沉香国处第十二",
+      "file": "010.md"
+    },
+    {
+      "index": 11,
+      "title": "入波罗国处第十三",
+      "file": "011.md"
+    },
+    {
+      "index": 12,
+      "title": "入优钵罗国处第十四",
+      "file": "012.md"
+    },
+    {
+      "index": 13,
+      "title": "入竺国度海之处第十五",
+      "file": "013.md"
+    },
+    {
+      "index": 14,
+      "title": "转至香林寺受心经本第十六",
+      "file": "014.md"
+    },
+    {
+      "index": 15,
+      "title": "到陕西王长者妻杀儿处第十七",
+      "file": "015.md"
+    },
+    {
+      "index": 16,
+      "title": "附录",
+      "file": "016.md"
+    },
+    {
+      "index": 17,
+      "title": "王国维跋",
+      "file": "017.md"
+    }
+  ]
+}

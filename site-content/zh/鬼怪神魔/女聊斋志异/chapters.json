@@ -1,0 +1,457 @@
+{
+  "name": "女聊斋志异",
+  "bookType": "鬼怪神魔",
+  "chapterCount": 90,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "叙",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "娥皇女英",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "姜嫄",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "红线",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "西施郑旦",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "卓文君",
+      "file": "005.md"
+    },
+    {
+      "index": 6,
+      "title": "王嫱",
+      "file": "006.md"
+    },
+    {
+      "index": 7,
+      "title": "薛瑶英",
+      "file": "007.md"
+    },
+    {
+      "index": 8,
+      "title": "隨风",
+      "file": "008.md"
+    },
+    {
+      "index": 9,
+      "title": "步非烟",
+      "file": "009.md"
+    },
+    {
+      "index": 10,
+      "title": "崔护妻",
+      "file": "010.md"
+    },
+    {
+      "index": 11,
+      "title": "梁夫人",
+      "file": "011.md"
+    },
+    {
+      "index": 12,
+      "title": "红拂",
+      "file": "012.md"
+    },
+    {
+      "index": 13,
+      "title": "崔莺莺",
+      "file": "013.md"
+    },
+    {
+      "index": 14,
+      "title": "王娇鸾",
+      "file": "014.md"
+    },
+    {
+      "index": 15,
+      "title": "章台柳",
+      "file": "015.md"
+    },
+    {
+      "index": 16,
+      "title": "桂华",
+      "file": "016.md"
+    },
+    {
+      "index": 17,
+      "title": "绿珠",
+      "file": "017.md"
+    },
+    {
+      "index": 18,
+      "title": "韦氏",
+      "file": "018.md"
+    },
+    {
+      "index": 19,
+      "title": "刘翠翠",
+      "file": "019.md"
+    },
+    {
+      "index": 20,
+      "title": "柳鸾英",
+      "file": "020.md"
+    },
+    {
+      "index": 21,
+      "title": "王琼奴",
+      "file": "021.md"
+    },
+    {
+      "index": 22,
+      "title": "虢国夫人",
+      "file": "022.md"
+    },
+    {
+      "index": 23,
+      "title": "莫邪",
+      "file": "023.md"
+    },
+    {
+      "index": 24,
+      "title": "李氏女",
+      "file": "024.md"
+    },
+    {
+      "index": 25,
+      "title": "西河少女",
+      "file": "025.md"
+    },
+    {
+      "index": 26,
+      "title": "木兰",
+      "file": "026.md"
+    },
+    {
+      "index": 27,
+      "title": "王长卿妻",
+      "file": "027.md"
+    },
+    {
+      "index": 28,
+      "title": "张从恩继室某氏",
+      "file": "028.md"
+    },
+    {
+      "index": 29,
+      "title": "开元宫人",
+      "file": "029.md"
+    },
+    {
+      "index": 30,
+      "title": "采娘",
+      "file": "030.md"
+    },
+    {
+      "index": 31,
+      "title": "黄道婆",
+      "file": "031.md"
+    },
+    {
+      "index": 32,
+      "title": "沈真真",
+      "file": "032.md"
+    },
+    {
+      "index": 33,
+      "title": "寇莱公妾",
+      "file": "033.md"
+    },
+    {
+      "index": 34,
+      "title": "曹大家",
+      "file": "034.md"
+    },
+    {
+      "index": 35,
+      "title": "王魁",
+      "file": "035.md"
+    },
+    {
+      "index": 36,
+      "title": "白老长",
+      "file": "036.md"
+    },
+    {
+      "index": 37,
+      "title": "谷慧儿",
+      "file": "037.md"
+    },
+    {
+      "index": 38,
+      "title": "陆氏女",
+      "file": "038.md"
+    },
+    {
+      "index": 39,
+      "title": "柯寿菊",
+      "file": "039.md"
+    },
+    {
+      "index": 40,
+      "title": "彩凤",
+      "file": "040.md"
+    },
+    {
+      "index": 41,
+      "title": "严武",
+      "file": "041.md"
+    },
+    {
+      "index": 42,
+      "title": "宓珠",
+      "file": "042.md"
+    },
+    {
+      "index": 43,
+      "title": "翠筠",
+      "file": "043.md"
+    },
+    {
+      "index": 44,
+      "title": "李老",
+      "file": "044.md"
+    },
+    {
+      "index": 45,
+      "title": "铁簪子",
+      "file": "045.md"
+    },
+    {
+      "index": 46,
+      "title": "鹿女泉",
+      "file": "046.md"
+    },
+    {
+      "index": 47,
+      "title": "榖於菟",
+      "file": "047.md"
+    },
+    {
+      "index": 48,
+      "title": "秦良玉",
+      "file": "048.md"
+    },
+    {
+      "index": 49,
+      "title": "荆茅",
+      "file": "049.md"
+    },
+    {
+      "index": 50,
+      "title": "玉桂",
+      "file": "050.md"
+    },
+    {
+      "index": 51,
+      "title": "查女",
+      "file": "051.md"
+    },
+    {
+      "index": 52,
+      "title": "陈恭人",
+      "file": "052.md"
+    },
+    {
+      "index": 53,
+      "title": "郭元振",
+      "file": "053.md"
+    },
+    {
+      "index": 54,
+      "title": "薛灵芸",
+      "file": "054.md"
+    },
+    {
+      "index": 55,
+      "title": "谢小娥",
+      "file": "055.md"
+    },
+    {
+      "index": 56,
+      "title": "李娃",
+      "file": "056.md"
+    },
+    {
+      "index": 57,
+      "title": "素娥",
+      "file": "057.md"
+    },
+    {
+      "index": 58,
+      "title": "蔡筝娘",
+      "file": "058.md"
+    },
+    {
+      "index": 59,
+      "title": "小青传",
+      "file": "059.md"
+    },
+    {
+      "index": 60,
+      "title": "普依祠",
+      "file": "060.md"
+    },
+    {
+      "index": 61,
+      "title": "姚家妇",
+      "file": "061.md"
+    },
+    {
+      "index": 62,
+      "title": "刘妪",
+      "file": "062.md"
+    },
+    {
+      "index": 63,
+      "title": "夏夫人",
+      "file": "063.md"
+    },
+    {
+      "index": 64,
+      "title": "鞠烈妇",
+      "file": "064.md"
+    },
+    {
+      "index": 65,
+      "title": "赵潘二夫人",
+      "file": "065.md"
+    },
+    {
+      "index": 66,
+      "title": "甘后",
+      "file": "066.md"
+    },
+    {
+      "index": 67,
+      "title": "杨太真",
+      "file": "067.md"
+    },
+    {
+      "index": 68,
+      "title": "梅妃",
+      "file": "068.md"
+    },
+    {
+      "index": 69,
+      "title": "牛应贞",
+      "file": "069.md"
+    },
+    {
+      "index": 70,
+      "title": "麻姑",
+      "file": "070.md"
+    },
+    {
+      "index": 71,
+      "title": "裴航",
+      "file": "071.md"
+    },
+    {
+      "index": 72,
+      "title": "许真君",
+      "file": "072.md"
+    },
+    {
+      "index": 73,
+      "title": "刘晨",
+      "file": "073.md"
+    },
+    {
+      "index": 74,
+      "title": "赵飞燕",
+      "file": "074.md"
+    },
+    {
+      "index": 75,
+      "title": "洛神",
+      "file": "075.md"
+    },
+    {
+      "index": 76,
+      "title": "有外山王",
+      "file": "076.md"
+    },
+    {
+      "index": 77,
+      "title": "吴生",
+      "file": "077.md"
+    },
+    {
+      "index": 78,
+      "title": "聂隐娘",
+      "file": "078.md"
+    },
+    {
+      "index": 79,
+      "title": "姮儿",
+      "file": "079.md"
+    },
+    {
+      "index": 80,
+      "title": "双缢庙",
+      "file": "080.md"
+    },
+    {
+      "index": 81,
+      "title": "妙女",
+      "file": "081.md"
+    },
+    {
+      "index": 82,
+      "title": "王梦蛟",
+      "file": "082.md"
+    },
+    {
+      "index": 83,
+      "title": "白猿",
+      "file": "083.md"
+    },
+    {
+      "index": 84,
+      "title": "娇红记",
+      "file": "084.md"
+    },
+    {
+      "index": 85,
+      "title": "孙壮姑",
+      "file": "085.md"
+    },
+    {
+      "index": 86,
+      "title": "邬生",
+      "file": "086.md"
+    },
+    {
+      "index": 87,
+      "title": "袁姬",
+      "file": "087.md"
+    },
+    {
+      "index": 88,
+      "title": "爱儿",
+      "file": "088.md"
+    },
+    {
+      "index": 89,
+      "title": "谢翱",
+      "file": "089.md"
+    }
+  ]
+}

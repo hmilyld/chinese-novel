@@ -1,0 +1,37 @@
+{
+  "name": "因话录",
+  "bookType": "其他",
+  "chapterCount": 6,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "卷一 宫部",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "卷二 商部上",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "卷三 商部下",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "卷四 角部",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "卷五 徵部",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "卷六·羽部",
+      "file": "005.md"
+    }
+  ]
+}

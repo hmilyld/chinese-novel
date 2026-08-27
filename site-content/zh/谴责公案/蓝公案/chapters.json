@@ -1,0 +1,127 @@
+{
+  "name": "蓝公案",
+  "bookType": "谴责公案",
+  "chapterCount": 24,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "第一则  五营兵食",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "第二则  三宄盗尸",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "第三则  邪教惑民",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "第四则  幽魂对质",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "第五则  葫卢地",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "第六则  没字词",
+      "file": "005.md"
+    },
+    {
+      "index": 6,
+      "title": "第七则  龙湫埔奇货",
+      "file": "006.md"
+    },
+    {
+      "index": 7,
+      "title": "第八则  死丐得妻子",
+      "file": "007.md"
+    },
+    {
+      "index": 8,
+      "title": "第九则  贼轻再醮人",
+      "file": "008.md"
+    },
+    {
+      "index": 9,
+      "title": "第十则  闽广洋盗",
+      "file": "009.md"
+    },
+    {
+      "index": 10,
+      "title": "第十一则  兄弟讼田",
+      "file": "010.md"
+    },
+    {
+      "index": 11,
+      "title": "第十二则  卓洲溪",
+      "file": "011.md"
+    },
+    {
+      "index": 12,
+      "title": "第十三则  改甲册",
+      "file": "012.md"
+    },
+    {
+      "index": 13,
+      "title": "第十四则  云落店私刑",
+      "file": "013.md"
+    },
+    {
+      "index": 14,
+      "title": "第十五则  三山王多口",
+      "file": "014.md"
+    },
+    {
+      "index": 15,
+      "title": "第十六则  西谷船户",
+      "file": "015.md"
+    },
+    {
+      "index": 16,
+      "title": "第十七则  忍心长舌",
+      "file": "016.md"
+    },
+    {
+      "index": 17,
+      "title": "第十八则  仙村楼",
+      "file": "017.md"
+    },
+    {
+      "index": 18,
+      "title": "第十九则  尺五棍",
+      "file": "018.md"
+    },
+    {
+      "index": 19,
+      "title": "第二十则  林军师",
+      "file": "019.md"
+    },
+    {
+      "index": 20,
+      "title": "第二十一则  山门城",
+      "file": "020.md"
+    },
+    {
+      "index": 21,
+      "title": "第二十二则  猪血有灵",
+      "file": "021.md"
+    },
+    {
+      "index": 22,
+      "title": "第二十三则  古柩作孽",
+      "file": "022.md"
+    },
+    {
+      "index": 23,
+      "title": "第二十四则  蜃楼可畏",
+      "file": "023.md"
+    }
+  ]
+}

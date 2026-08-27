@@ -1,0 +1,32 @@
+{
+  "name": "莺莺传",
+  "bookType": "传奇小说",
+  "chapterCount": 5,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "原文",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "译文",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "莺莺传里的女性悲剧",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "张生人物分析",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "崔莺莺的人物分析",
+      "file": "004.md"
+    }
+  ]
+}

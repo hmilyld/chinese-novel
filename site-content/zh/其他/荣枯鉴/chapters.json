@@ -1,0 +1,57 @@
+{
+  "name": "荣枯鉴",
+  "bookType": "其他",
+  "chapterCount": 10,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "圆通卷一",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "闻达卷二",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "解厄卷三",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "交结卷四",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "节仪卷五",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "明鉴卷六",
+      "file": "005.md"
+    },
+    {
+      "index": 6,
+      "title": "谤言卷七",
+      "file": "006.md"
+    },
+    {
+      "index": 7,
+      "title": "示伪卷八",
+      "file": "007.md"
+    },
+    {
+      "index": 8,
+      "title": "降心卷九",
+      "file": "008.md"
+    },
+    {
+      "index": 9,
+      "title": "揣知卷十",
+      "file": "009.md"
+    }
+  ]
+}

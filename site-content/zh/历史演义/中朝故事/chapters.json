@@ -1,0 +1,17 @@
+{
+  "name": "中朝故事",
+  "bookType": "历史演义",
+  "chapterCount": 2,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "卷上",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "卷下",
+      "file": "001.md"
+    }
+  ]
+}

@@ -1,0 +1,300 @@
+---
+import { getCollection } from "astro:content";
+import type { Locale } from "../../../lib/data";
+import Base from "../../../layouts/Base.astro";
+import { translate } from "../../../i18n/translate";
+import { buildAuthors } from "../../../lib/data";
+
+export function getStaticPaths() {
+  return (["zh", "zh-TW"] as Locale[]).map((locale) => ({
+    params: { lang: locale },
+    props: { locale },
+  }));
+}
+
+const { locale } = Astro.props;
+const t = translate(locale);
+const base = `/${locale}`;
+
+const books = await getCollection("books");
+const authors = buildAuthors(books);
+const dynasties = [
+  ...new Set(
+    authors
+      .map((a) => a.dynasty || "未知")
+      .filter((d) => d && d !== "未知")
+  ),
+].sort((a, b) => a.localeCompare(b, "zh"));
+const isZh = locale === "zh" || locale === "zh-TW";
+const dynLabel = (d: string) => d;
+
+const dynastyColors: Record<string, string> = {
+  "明": "#8b4a4a",
+  "清": "#7a6a50",
+  "唐": "#5a6a6b",
+  "宋": "#6a5a6b",
+  "元": "#5a6b5a",
+  "汉": "#6b6050",
+  "晋": "#6b5a50",
+  "五代": "#5a6060",
+  "南唐": "#606050",
+  "金": "#6b5a5a",
+  "明末清初": "#75585a",
+  "未知": "#605848",
+};
+const fallbackColor = "#605848";
+---
+
+<Base locale={locale} title={t("author.title")}>
+  <section class="auth-head">
+    <div class="auth-seal" aria-hidden="true">笔</div>
+    <h1>{t("author.title")}</h1>
+    <p class="auth-sub">{t("author.count").replace("{n}", String(authors.length))}</p>
+  </section>
+
+  <div class="auth-dybar" role="navigation" aria-label="dynasty filter">
+    <button type="button" class="dyn-pill is-active" data-dyn="">{t("library.all")}</button>
+    <button type="button" class="dyn-pill" data-dyn="未知">未知</button>
+    {dynasties.map((d) => (
+      <button type="button" class="dyn-pill" data-dyn={d}>{dynLabel(d)}</button>
+    ))}
+  </div>
+
+  <div class="auth-search">
+    <label class="visually-hidden" for="auth-q">{t("author.searchPlaceholder")}</label>
+    <input
+      id="auth-q"
+      type="search"
+      placeholder={t("author.searchPlaceholder")}
+      autocomplete="off"
+    />
+  </div>
+
+  <p class="auth-count" id="auth-count" aria-live="polite">
+    {t("author.count").replace("{n}", String(authors.length))}
+  </p>
+
+  <ul class="auth-grid" id="auth-grid">
+    {authors.map((a) => {
+      const dyn = a.dynasty || "未知";
+      const color = dynastyColors[dyn] ?? fallbackColor;
+      return (
+        <li data-dyn={dyn} data-search={`${a.name} ${a.dynasty}`}>
+          <a
+            class="auth-card"
+            href={`${base}/author/${encodeURIComponent(a.slug)}`}
+            style={`--card-accent: ${color}`}
+          >
+            <span class="auth-card-dyn">{dynLabel(dyn)}</span>
+            <span class="auth-card-name">{a.name}</span>
+            <span class="auth-card-books">{t("author.books").replace("{n}", String(a.bookCount))}</span>
+          </a>
+        </li>
+      );
+    })}
+  </ul>
+
+  <div class="auth-empty" id="auth-empty" hidden>
+    {t("search.empty")}
+  </div>
+</Base>
+
+<script>
+  const input = document.getElementById("auth-q") as HTMLInputElement;
+  const grid = document.getElementById("auth-grid") as HTMLElement;
+  const empty = document.getElementById("auth-empty") as HTMLElement;
+  const count = document.getElementById("auth-count") as HTMLElement;
+  const cards = Array.from(grid.querySelectorAll("li")) as HTMLElement[];
+  const countBase = count.textContent!;
+  const pills = Array.from(document.querySelectorAll(".dyn-pill")) as HTMLButtonElement[];
+
+  let activeDyn = "";
+
+  function apply() {
+    const q = input.value.trim().toLowerCase();
+    let shown = 0;
+    for (const li of cards) {
+      const dynOk = !activeDyn || li.dataset.dyn === activeDyn;
+      const text = li.dataset.search?.toLowerCase() ?? "";
+      const qOk = !q || text.includes(q);
+      const ok = dynOk && qOk;
+      li.style.display = ok ? "" : "none";
+      if (ok) shown++;
+    }
+    empty.hidden = shown > 0;
+    count.textContent = countBase.replace(/[0-9]+/, String(shown));
+    for (const p of pills) {
+      p.classList.toggle("is-active", p.dataset.dyn === activeDyn);
+    }
+  }
+
+  input.addEventListener("input", apply);
+  pills.forEach((p) => {
+    p.addEventListener("click", () => {
+      activeDyn = p.dataset.dyn ?? "";
+      apply();
+    });
+  });
+  apply();
+</script>
+
+<style>
+  .auth-head {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: var(--space-6) var(--space-5) var(--space-3);
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+  }
+  .auth-seal {
+    width: 2.6rem;
+    height: 2.6rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--cinnabar);
+    color: var(--paper);
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    border-radius: 3px;
+  }
+  .auth-head h1 {
+    font-size: var(--fs-3xl);
+  }
+  .auth-sub {
+    color: var(--text-dim);
+    margin-left: auto;
+  }
+
+  /* dynasty filter */
+  .auth-dybar {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 var(--space-5) var(--space-4);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .dyn-pill {
+    padding: 0.25rem 0.7rem;
+    border: var(--hairline) var(--line);
+    border-radius: 999px;
+    font-family: var(--font-display);
+    font-size: var(--fs-sm);
+    color: var(--text-dim);
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  }
+  .dyn-pill:hover {
+    color: var(--text);
+    border-color: var(--gold);
+  }
+  .dyn-pill.is-active {
+    background: var(--cinnabar);
+    border-color: var(--cinnabar);
+    color: var(--paper);
+  }
+
+  .auth-search {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 var(--space-5) var(--space-3);
+  }
+  .auth-search input {
+    width: 100%;
+    background: var(--bg-panel);
+    border: var(--hairline) var(--line);
+    border-radius: var(--radius);
+    color: var(--text);
+    padding: 0.7rem 1rem;
+    font-size: var(--fs-md);
+    font-family: var(--font-body);
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  }
+  .auth-search input:focus-visible {
+    border-color: var(--cinnabar);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(179, 54, 47, 0.15);
+  }
+  .auth-count {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0.2rem var(--space-5) var(--space-3);
+    color: var(--text-dim);
+    font-size: var(--fs-sm);
+  }
+
+  /* card grid */
+  .auth-grid {
+    list-style: none;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 var(--space-5) var(--space-7);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 150px);
+    gap: var(--space-4);
+    justify-content: center;
+  }
+
+  /* solid variant — all cards use dynasty color */
+  .auth-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.15rem;
+    padding: var(--space-4) var(--space-3);
+    background: var(--card-accent, var(--cinnabar));
+    color: var(--paper);
+    border-radius: 3px;
+    width: 150px;
+    height: 120px;
+    justify-content: center;
+    position: relative;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+    box-shadow: 0 0 0 2px var(--bg), 0 0 0 3px var(--card-accent, var(--cinnabar));
+    text-align: center;
+    overflow: hidden;
+  }
+  .auth-card:hover {
+    box-shadow: 0 0 0 2px var(--bg), 0 0 0 3px var(--card-accent, var(--cinnabar)),
+      0 4px 14px rgba(0, 0, 0, 0.18);
+    transform: scale(1.05);
+  }
+
+  .auth-card-dyn {
+    font-family: var(--font-latin-display);
+    font-style: italic;
+    color: rgba(236, 227, 206, 0.6);
+    font-size: var(--fs-xs);
+  }
+  .auth-card-name {
+    font-family: var(--font-display);
+    font-size: var(--fs-lg);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+  .auth-card-books {
+    color: rgba(236, 227, 206, 0.5);
+    font-size: var(--fs-xs);
+  }
+
+  .auth-empty {
+    text-align: center;
+    color: var(--text-dim);
+    padding: var(--space-6);
+    font-family: var(--font-display);
+  }
+  @media (max-width: 600px) {
+    .auth-grid {
+      grid-template-columns: repeat(auto-fill, 130px);
+    }
+    .auth-card {
+      width: 130px;
+      height: 110px;
+    }
+  }
+</style>

@@ -1,0 +1,612 @@
+{
+  "name": "益智录",
+  "bookType": "鬼怪神魔",
+  "chapterCount": 121,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "卷之一 何福",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "卷之二 某伟",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "卷之二 于媪",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "卷之二 李义",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "卷之二 应富有",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "卷之二 宋蕙娘",
+      "file": "005.md"
+    },
+    {
+      "index": 6,
+      "title": "卷之二 顾道全",
+      "file": "006.md"
+    },
+    {
+      "index": 7,
+      "title": "卷之二 张清",
+      "file": "007.md"
+    },
+    {
+      "index": 8,
+      "title": "卷之二 金瑞",
+      "file": "008.md"
+    },
+    {
+      "index": 9,
+      "title": "卷之三 苏玉真",
+      "file": "009.md"
+    },
+    {
+      "index": 10,
+      "title": "卷之三 义狼",
+      "file": "010.md"
+    },
+    {
+      "index": 11,
+      "title": "卷之三 姚五官",
+      "file": "011.md"
+    },
+    {
+      "index": 12,
+      "title": "卷之三 瑞红",
+      "file": "012.md"
+    },
+    {
+      "index": 13,
+      "title": "卷之三 贺举人",
+      "file": "013.md"
+    },
+    {
+      "index": 14,
+      "title": "卷之三 聂文焕",
+      "file": "014.md"
+    },
+    {
+      "index": 15,
+      "title": "卷之三 福德会馆",
+      "file": "015.md"
+    },
+    {
+      "index": 16,
+      "title": "卷之三 杨彩云",
+      "file": "016.md"
+    },
+    {
+      "index": 17,
+      "title": "卷之三 赵阁老",
+      "file": "017.md"
+    },
+    {
+      "index": 18,
+      "title": "卷之三 琼华岛",
+      "file": "018.md"
+    },
+    {
+      "index": 19,
+      "title": "卷之三 杜仲",
+      "file": "019.md"
+    },
+    {
+      "index": 20,
+      "title": "卷之三 隗士杰",
+      "file": "020.md"
+    },
+    {
+      "index": 21,
+      "title": "卷之四 散花天女（稿本作“散花仙女”）",
+      "file": "021.md"
+    },
+    {
+      "index": 22,
+      "title": "卷之四 狗冢坡（稿本作“义犬”）",
+      "file": "022.md"
+    },
+    {
+      "index": 23,
+      "title": "卷之四 节烈女",
+      "file": "023.md"
+    },
+    {
+      "index": 24,
+      "title": "卷之四 牛鬼",
+      "file": "024.md"
+    },
+    {
+      "index": 25,
+      "title": "卷之四 华月娘",
+      "file": "025.md"
+    },
+    {
+      "index": 26,
+      "title": "卷之四 江氏",
+      "file": "026.md"
+    },
+    {
+      "index": 27,
+      "title": "卷之四 方太史（稿本作“方安仁”）",
+      "file": "027.md"
+    },
+    {
+      "index": 28,
+      "title": "卷之四 李智",
+      "file": "028.md"
+    },
+    {
+      "index": 29,
+      "title": "卷之四 人狐换亲（稿本作“许怀芳”）",
+      "file": "029.md"
+    },
+    {
+      "index": 30,
+      "title": "卷之四 伍丽娘",
+      "file": "030.md"
+    },
+    {
+      "index": 31,
+      "title": "卷之四 谷一穗",
+      "file": "031.md"
+    },
+    {
+      "index": 32,
+      "title": "卷之五 翠玉",
+      "file": "032.md"
+    },
+    {
+      "index": 33,
+      "title": "卷之五 刘翁",
+      "file": "033.md"
+    },
+    {
+      "index": 34,
+      "title": "卷之五 林闺英",
+      "file": "034.md"
+    },
+    {
+      "index": 35,
+      "title": "卷之五 胡二姐",
+      "file": "035.md"
+    },
+    {
+      "index": 36,
+      "title": "卷之五 某公子",
+      "file": "036.md"
+    },
+    {
+      "index": 37,
+      "title": "卷之五 白猿",
+      "file": "037.md"
+    },
+    {
+      "index": 38,
+      "title": "卷之五 某乙",
+      "file": "038.md"
+    },
+    {
+      "index": 39,
+      "title": "卷之五 阿娇",
+      "file": "039.md"
+    },
+    {
+      "index": 40,
+      "title": "卷之五 义鬼",
+      "file": "040.md"
+    },
+    {
+      "index": 41,
+      "title": "卷之五 碧玉",
+      "file": "041.md"
+    },
+    {
+      "index": 42,
+      "title": "卷之五 请乩",
+      "file": "042.md"
+    },
+    {
+      "index": 43,
+      "title": "卷之五 来生债",
+      "file": "043.md"
+    },
+    {
+      "index": 44,
+      "title": "卷之五 旱脚鱼",
+      "file": "044.md"
+    },
+    {
+      "index": 45,
+      "title": "卷之五 潘泽沅",
+      "file": "045.md"
+    },
+    {
+      "index": 46,
+      "title": "卷之六 秦丽娟",
+      "file": "046.md"
+    },
+    {
+      "index": 47,
+      "title": "卷之六 詹如仙",
+      "file": "047.md"
+    },
+    {
+      "index": 48,
+      "title": "卷之六 崔洁",
+      "file": "048.md"
+    },
+    {
+      "index": 49,
+      "title": "卷之六 牛偿债（稿本作“常山某”）",
+      "file": "049.md"
+    },
+    {
+      "index": 50,
+      "title": "卷之六 冯官屯（稿本作“田思义”）",
+      "file": "050.md"
+    },
+    {
+      "index": 51,
+      "title": "卷之七 月仙",
+      "file": "051.md"
+    },
+    {
+      "index": 52,
+      "title": "卷之七 路案",
+      "file": "052.md"
+    },
+    {
+      "index": 53,
+      "title": "卷之七 巩生",
+      "file": "053.md"
+    },
+    {
+      "index": 54,
+      "title": "卷之七 毕成",
+      "file": "054.md"
+    },
+    {
+      "index": 55,
+      "title": "卷之七 虚娘",
+      "file": "055.md"
+    },
+    {
+      "index": 56,
+      "title": "卷之七 水母三娘",
+      "file": "056.md"
+    },
+    {
+      "index": 57,
+      "title": "卷之七 琼仙",
+      "file": "057.md"
+    },
+    {
+      "index": 58,
+      "title": "卷之七 张春娇",
+      "file": "058.md"
+    },
+    {
+      "index": 59,
+      "title": "卷之七 章邑生",
+      "file": "059.md"
+    },
+    {
+      "index": 60,
+      "title": "卷之七 王威",
+      "file": "060.md"
+    },
+    {
+      "index": 61,
+      "title": "卷之七 陇州三案",
+      "file": "061.md"
+    },
+    {
+      "index": 62,
+      "title": "卷之七 王富段成",
+      "file": "062.md"
+    },
+    {
+      "index": 63,
+      "title": "卷之八 顾清高",
+      "file": "063.md"
+    },
+    {
+      "index": 64,
+      "title": "卷之八 江在新",
+      "file": "064.md"
+    },
+    {
+      "index": 65,
+      "title": "卷之八 美人",
+      "file": "065.md"
+    },
+    {
+      "index": 66,
+      "title": "卷之八 某邑案",
+      "file": "066.md"
+    },
+    {
+      "index": 67,
+      "title": "卷之八 瑞雪",
+      "file": "067.md"
+    },
+    {
+      "index": 68,
+      "title": "卷之八 赵诚",
+      "file": "068.md"
+    },
+    {
+      "index": 69,
+      "title": "卷之八 恶梦",
+      "file": "069.md"
+    },
+    {
+      "index": 70,
+      "title": "卷之八 许翠娥",
+      "file": "070.md"
+    },
+    {
+      "index": 71,
+      "title": "卷之八 齐氏",
+      "file": "071.md"
+    },
+    {
+      "index": 72,
+      "title": "卷之八 矫娘",
+      "file": "072.md"
+    },
+    {
+      "index": 73,
+      "title": "卷之八 牛子良",
+      "file": "073.md"
+    },
+    {
+      "index": 74,
+      "title": "卷之九 苏成",
+      "file": "074.md"
+    },
+    {
+      "index": 75,
+      "title": "卷之九 颜星丽",
+      "file": "075.md"
+    },
+    {
+      "index": 76,
+      "title": "卷之九 太原娼（稿本作“封云”）",
+      "file": "076.md"
+    },
+    {
+      "index": 77,
+      "title": "卷之九 贺梦龄",
+      "file": "077.md"
+    },
+    {
+      "index": 78,
+      "title": "卷之十 耿如梅",
+      "file": "078.md"
+    },
+    {
+      "index": 79,
+      "title": "卷之十 林芳",
+      "file": "079.md"
+    },
+    {
+      "index": 80,
+      "title": "卷之十 李司训",
+      "file": "080.md"
+    },
+    {
+      "index": 81,
+      "title": "卷之十 鸦片烟",
+      "file": "081.md"
+    },
+    {
+      "index": 82,
+      "title": "卷之十一 蒋廉",
+      "file": "082.md"
+    },
+    {
+      "index": 83,
+      "title": "卷之十一 余母",
+      "file": "083.md"
+    },
+    {
+      "index": 84,
+      "title": "卷之十一 合欢头",
+      "file": "084.md"
+    },
+    {
+      "index": 85,
+      "title": "卷之十一 严三凤",
+      "file": "085.md"
+    },
+    {
+      "index": 86,
+      "title": "卷之十一 董二晕",
+      "file": "086.md"
+    },
+    {
+      "index": 87,
+      "title": "卷之十一 龙真穴的",
+      "file": "087.md"
+    },
+    {
+      "index": 88,
+      "title": "卷之十一 绛云",
+      "file": "088.md"
+    },
+    {
+      "index": 89,
+      "title": "卷之十一 开癞",
+      "file": "089.md"
+    },
+    {
+      "index": 90,
+      "title": "卷之十一 带产出继",
+      "file": "090.md"
+    },
+    {
+      "index": 91,
+      "title": "卷之十一 鬼狐遗方",
+      "file": "091.md"
+    },
+    {
+      "index": 92,
+      "title": "卷之十一 查修文",
+      "file": "092.md"
+    },
+    {
+      "index": 93,
+      "title": "附录一：跋中圭书",
+      "file": "093.md"
+    },
+    {
+      "index": 94,
+      "title": "附录一：序张葆諴",
+      "file": "094.md"
+    },
+    {
+      "index": 95,
+      "title": "附录一：序杜乔羽",
+      "file": "095.md"
+    },
+    {
+      "index": 96,
+      "title": "附录一：序李佐贤",
+      "file": "096.md"
+    },
+    {
+      "index": 97,
+      "title": "附录一：序黄琴轩",
+      "file": "097.md"
+    },
+    {
+      "index": 98,
+      "title": "附录一：序吴炳荣",
+      "file": "098.md"
+    },
+    {
+      "index": 99,
+      "title": "附录一：序侯功震",
+      "file": "099.md"
+    },
+    {
+      "index": 100,
+      "title": "附录一：序尹述",
+      "file": "100.md"
+    },
+    {
+      "index": 101,
+      "title": "附录一：序郑锡麟",
+      "file": "101.md"
+    },
+    {
+      "index": 102,
+      "title": "附录一：序孙官云",
+      "file": "102.md"
+    },
+    {
+      "index": 103,
+      "title": "附录一：序杨福祺",
+      "file": "103.md"
+    },
+    {
+      "index": 104,
+      "title": "附录一：序汪仲洵",
+      "file": "104.md"
+    },
+    {
+      "index": 105,
+      "title": "附录一：序王廷槐",
+      "file": "105.md"
+    },
+    {
+      "index": 106,
+      "title": "附录一：序谭金诏",
+      "file": "106.md"
+    },
+    {
+      "index": 107,
+      "title": "附录一：序王履中",
+      "file": "107.md"
+    },
+    {
+      "index": 108,
+      "title": "附录一：序李恩寿",
+      "file": "108.md"
+    },
+    {
+      "index": 109,
+      "title": "附录一：序侯维垣",
+      "file": "109.md"
+    },
+    {
+      "index": 110,
+      "title": "附录一：题辞十章盖防如",
+      "file": "110.md"
+    },
+    {
+      "index": 111,
+      "title": "附录一：题辞六章马国翰",
+      "file": "111.md"
+    },
+    {
+      "index": 112,
+      "title": "附录一：题辞侯仲霖",
+      "file": "112.md"
+    },
+    {
+      "index": 113,
+      "title": "附录一：题词余澐",
+      "file": "113.md"
+    },
+    {
+      "index": 114,
+      "title": "附录一：题词二章蔡庆元",
+      "file": "114.md"
+    },
+    {
+      "index": 115,
+      "title": "附录一：题词二章梁健",
+      "file": "115.md"
+    },
+    {
+      "index": 116,
+      "title": "附录一：改烟雨楼志异元序宋翘",
+      "file": "116.md"
+    },
+    {
+      "index": 117,
+      "title": "附录一：刻《烟雨楼续聊斋志异》改本例言宋翘",
+      "file": "117.md"
+    },
+    {
+      "index": 118,
+      "title": "附录一：序何毓福",
+      "file": "118.md"
+    },
+    {
+      "index": 119,
+      "title": "附录二：稿本所存原《益智录》目录",
+      "file": "119.md"
+    },
+    {
+      "index": 120,
+      "title": "附录二：整理后记",
+      "file": "120.md"
+    }
+  ]
+}

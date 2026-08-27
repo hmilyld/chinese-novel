@@ -1,0 +1,12 @@
+{
+  "name": "灵应传",
+  "bookType": "传奇小说",
+  "chapterCount": 1,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "原文",
+      "file": "000.md"
+    }
+  ]
+}

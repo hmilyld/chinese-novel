@@ -1,0 +1,352 @@
+{
+  "name": "长短经",
+  "bookType": "其他",
+  "chapterCount": 69,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "原序 序",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "大体第一",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "任长第二",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "品目第三",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "量才第四",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "知人第五",
+      "file": "005.md"
+    },
+    {
+      "index": 6,
+      "title": "察相第六",
+      "file": "006.md"
+    },
+    {
+      "index": 7,
+      "title": "论士第七",
+      "file": "007.md"
+    },
+    {
+      "index": 8,
+      "title": "政体第八",
+      "file": "008.md"
+    },
+    {
+      "index": 9,
+      "title": "君德第九",
+      "file": "009.md"
+    },
+    {
+      "index": 10,
+      "title": "臣行第十",
+      "file": "010.md"
+    },
+    {
+      "index": 11,
+      "title": "德表十一",
+      "file": "011.md"
+    },
+    {
+      "index": 12,
+      "title": "理乱十二",
+      "file": "012.md"
+    },
+    {
+      "index": 13,
+      "title": "反经十三",
+      "file": "013.md"
+    },
+    {
+      "index": 14,
+      "title": "是非十四",
+      "file": "014.md"
+    },
+    {
+      "index": 15,
+      "title": "适变十五",
+      "file": "015.md"
+    },
+    {
+      "index": 16,
+      "title": "正论十六",
+      "file": "016.md"
+    },
+    {
+      "index": 17,
+      "title": "霸图十七",
+      "file": "017.md"
+    },
+    {
+      "index": 18,
+      "title": "七雄略十八",
+      "file": "018.md"
+    },
+    {
+      "index": 19,
+      "title": "三国权十九",
+      "file": "019.md"
+    },
+    {
+      "index": 20,
+      "title": "三国权十九 蜀",
+      "file": "020.md"
+    },
+    {
+      "index": 21,
+      "title": "三国权十九 吴",
+      "file": "021.md"
+    },
+    {
+      "index": 22,
+      "title": "三国权十九 魏",
+      "file": "022.md"
+    },
+    {
+      "index": 23,
+      "title": "惧戒二十",
+      "file": "023.md"
+    },
+    {
+      "index": 24,
+      "title": "时宜二一",
+      "file": "024.md"
+    },
+    {
+      "index": 25,
+      "title": "钓情二二",
+      "file": "025.md"
+    },
+    {
+      "index": 26,
+      "title": "诡信二三",
+      "file": "026.md"
+    },
+    {
+      "index": 27,
+      "title": "忠疑二四",
+      "file": "027.md"
+    },
+    {
+      "index": 28,
+      "title": "用无用二五",
+      "file": "028.md"
+    },
+    {
+      "index": 29,
+      "title": "恩生怨二六",
+      "file": "029.md"
+    },
+    {
+      "index": 30,
+      "title": "诡顺二七",
+      "file": "030.md"
+    },
+    {
+      "index": 31,
+      "title": "难必二八",
+      "file": "031.md"
+    },
+    {
+      "index": 32,
+      "title": "运命二九",
+      "file": "032.md"
+    },
+    {
+      "index": 33,
+      "title": "大私三十",
+      "file": "033.md"
+    },
+    {
+      "index": 34,
+      "title": "败功三一",
+      "file": "034.md"
+    },
+    {
+      "index": 35,
+      "title": "昏智三二",
+      "file": "035.md"
+    },
+    {
+      "index": 36,
+      "title": "卑政三三",
+      "file": "036.md"
+    },
+    {
+      "index": 37,
+      "title": "善亡三四",
+      "file": "037.md"
+    },
+    {
+      "index": 38,
+      "title": "诡俗三五",
+      "file": "038.md"
+    },
+    {
+      "index": 39,
+      "title": "息辩三六",
+      "file": "039.md"
+    },
+    {
+      "index": 40,
+      "title": "量过三七",
+      "file": "040.md"
+    },
+    {
+      "index": 41,
+      "title": "势运三八",
+      "file": "041.md"
+    },
+    {
+      "index": 42,
+      "title": "傲礼三九",
+      "file": "042.md"
+    },
+    {
+      "index": 43,
+      "title": "定名四十",
+      "file": "043.md"
+    },
+    {
+      "index": 44,
+      "title": "卷九 兵权",
+      "file": "044.md"
+    },
+    {
+      "index": 45,
+      "title": "出军四一",
+      "file": "045.md"
+    },
+    {
+      "index": 46,
+      "title": "练士四二",
+      "file": "046.md"
+    },
+    {
+      "index": 47,
+      "title": "结营四三",
+      "file": "047.md"
+    },
+    {
+      "index": 48,
+      "title": "道德四四",
+      "file": "048.md"
+    },
+    {
+      "index": 49,
+      "title": "禁令四五",
+      "file": "049.md"
+    },
+    {
+      "index": 50,
+      "title": "教战四六",
+      "file": "050.md"
+    },
+    {
+      "index": 51,
+      "title": "天时四七",
+      "file": "051.md"
+    },
+    {
+      "index": 52,
+      "title": "地形四八",
+      "file": "052.md"
+    },
+    {
+      "index": 53,
+      "title": "水火四九",
+      "file": "053.md"
+    },
+    {
+      "index": 54,
+      "title": "五间五十",
+      "file": "054.md"
+    },
+    {
+      "index": 55,
+      "title": "将体五一",
+      "file": "055.md"
+    },
+    {
+      "index": 56,
+      "title": "料敌五二",
+      "file": "056.md"
+    },
+    {
+      "index": 57,
+      "title": "势略五三",
+      "file": "057.md"
+    },
+    {
+      "index": 58,
+      "title": "攻心五四",
+      "file": "058.md"
+    },
+    {
+      "index": 59,
+      "title": "伐交五五",
+      "file": "059.md"
+    },
+    {
+      "index": 60,
+      "title": "格形五六",
+      "file": "060.md"
+    },
+    {
+      "index": 61,
+      "title": "蛇势五七",
+      "file": "061.md"
+    },
+    {
+      "index": 62,
+      "title": "先胜五八",
+      "file": "062.md"
+    },
+    {
+      "index": 63,
+      "title": "围师五九",
+      "file": "063.md"
+    },
+    {
+      "index": 64,
+      "title": "变通六十",
+      "file": "064.md"
+    },
+    {
+      "index": 65,
+      "title": "利害六一",
+      "file": "065.md"
+    },
+    {
+      "index": 66,
+      "title": "奇兵六二",
+      "file": "066.md"
+    },
+    {
+      "index": 67,
+      "title": "掩发六三",
+      "file": "067.md"
+    },
+    {
+      "index": 68,
+      "title": "还师六四",
+      "file": "068.md"
+    }
+  ]
+}

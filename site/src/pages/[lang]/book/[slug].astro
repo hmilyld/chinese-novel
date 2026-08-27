@@ -1,0 +1,324 @@
+---
+import { getCollection } from "astro:content";
+import type { Locale } from "../../../lib/data";
+import Base from "../../../layouts/Base.astro";
+import { translate, getPathByLocale } from "../../../i18n/translate";
+import { BOOK_TYPE_LABEL, readChapters } from "../../../lib/data";
+
+export async function getStaticPaths() {
+  const books = await getCollection("books");
+  const langs: Locale[] = ["zh", "zh-TW"];
+  const paths: { params: { lang: string; slug: string }; props: any }[] = [];
+  for (const lang of langs) {
+    for (const b of books) {
+      paths.push({
+        params: { lang, slug: b.data.slug },
+        props: { locale: lang, bookId: b.data.id },
+      });
+    }
+  }
+  return paths;
+}
+
+const { locale, bookId } = Astro.props;
+const t = translate(locale);
+const books = await getCollection("books");
+const book = books.find((b) => b.data.id === bookId)!;
+const data = book.data;
+const chapters = readChapters(bookId, locale) ?? [];
+const base = `/${locale}`;
+const dynastyEn = data.dynasty === "未知" ? "" : data.dynasty;
+const couplet =
+  data.slug === "红楼梦" ? "甄士隐梦幻识通灵　贾雨村风尘怀闺秀" : "";
+---
+
+<Base locale={locale} title={data.name}>
+  <section class="book-hero">
+    <div class="spine-art" aria-hidden="true">
+      <span class="spine-art-title">{data.name}</span>
+      <span class="spine-art-dyn">{data.dynasty}</span>
+      <span class="spine-art-seal">书</span>
+    </div>
+    <div class="book-meta">
+      <div class="book-kicker">
+        {BOOK_TYPE_LABEL(data.bookType)} · {dynastyEn}
+      </div>
+      <h1 class="book-title">{data.name}</h1>
+      <p class="book-sub">
+        <span>{data.author}</span>
+        <span>·</span>
+        <span>{t("book.chapterTotal").replace("{n}", String(data.chapterCount))}</span>
+        <span>·</span>
+        <span>{t("book.words").replace("{n}", String(data.words))}</span>
+      </p>
+      <a class="read-btn" href={`${base}/read/${data.slug}/0`}>
+        <span>{t("book.read")}</span>
+        <span class="read-seal" aria-hidden="true">開卷</span>
+      </a>
+      {couplet && (
+        <div class="book-coup" aria-label={couplet}>
+          {couplet
+            .split(/[\s\u3000\xa0]+/)
+            .filter(Boolean)
+            .map((half) => (
+              <span class="book-coup-half">{half}</span>
+            ))}
+        </div>
+      )}
+    </div>
+  </section>
+
+  <section class="book-intro">
+    <h2>{t("book.about")}</h2>
+    <p>{data.intro}</p>
+    {data.authorIntro && (
+      <p class="author-intro">
+        <strong>{data.author}</strong>：{data.authorIntro}
+      </p>
+    )}
+  </section>
+
+  <section class="book-toc">
+    <div class="toc-head">
+      <h2>{t("book.chapters")}</h2>
+      <span class="toc-count">{chapters.length}</span>
+    </div>
+    <ol class="toc-list">
+      {chapters.map((c) => (
+        <li>
+          <a href={`${base}/read/${data.slug}/${c.index}`}>
+            <span class="toc-idx">{String(c.index + 1).padStart(2, "0")}</span>
+            <span class="toc-title">{c.title}</span>
+          </a>
+        </li>
+      ))}
+    </ol>
+  </section>
+</Base>
+
+<style>
+  .book-hero {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: var(--space-7) var(--space-5) var(--space-5);
+    display: flex;
+    gap: var(--space-6);
+    align-items: center;
+  }
+  .spine-art {
+    flex: 0 0 auto;
+    width: 88px;
+    min-height: 300px;
+    border: var(--hairline) var(--gold);
+    border-radius: 4px 10px 10px 4px;
+    background: var(--bg-panel);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-5) 0;
+    box-shadow: 0 0 0 4px var(--bg), 0 0 0 5px var(--gold-dim),
+      var(--shadow-card);
+    position: relative;
+  }
+  .spine-art::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 14px;
+    bottom: 14px;
+    width: 2px;
+    background: repeating-linear-gradient(
+      to bottom,
+      var(--gold-dim) 0px,
+      var(--gold-dim) 6px,
+      transparent 6px,
+      transparent 12px
+    );
+    opacity: 0.45;
+  }
+  .spine-art-title {
+    writing-mode: vertical-rl;
+    font-family: var(--font-display);
+    font-size: var(--fs-xl);
+    letter-spacing: 0.15em;
+    max-height: 200px;
+  }
+  .spine-art-dyn {
+    font-family: var(--font-latin-display);
+    font-style: italic;
+    color: var(--text-dim);
+    font-size: var(--fs-xs);
+  }
+  .spine-art-seal {
+    width: 1.7rem;
+    height: 1.7rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--cinnabar);
+    color: var(--paper);
+    font-size: 1rem;
+    border-radius: 3px;
+  }
+  .book-meta {
+    flex: 1;
+  }
+  .book-kicker {
+    font-family: var(--font-latin-display);
+    font-style: italic;
+    letter-spacing: 0.1em;
+    color: var(--cinnabar);
+    margin-bottom: var(--space-2);
+    font-size: var(--fs-md);
+  }
+  .book-title {
+    font-size: var(--fs-3xl);
+    margin-bottom: var(--space-3);
+  }
+  .book-sub {
+    color: var(--text-dim);
+    display: flex;
+    gap: 0.4rem;
+  }
+  .read-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-top: var(--space-4);
+    padding: 0.7rem 1.5rem;
+    background: var(--cinnabar);
+    color: var(--paper);
+    border-radius: var(--radius);
+    font-family: var(--font-display);
+    font-size: var(--fs-md);
+    border: var(--hairline) var(--cinnabar);
+    transition: background-color 0.25s ease, color 0.25s ease,
+      box-shadow 0.25s ease;
+  }
+  .read-btn:hover {
+    background: var(--paper);
+    color: var(--cinnabar);
+    border-color: var(--cinnabar);
+    box-shadow: var(--shadow-glow-cinnabar);
+  }
+  .read-seal {
+    font-size: var(--fs-sm);
+  }
+  .book-unavailable {
+    margin-top: var(--space-4);
+    color: var(--text-dim);
+    font-size: var(--fs-sm);
+    font-style: italic;
+  }
+
+  .book-coup {
+    margin-top: var(--space-5);
+    border: var(--hairline) var(--line);
+    border-radius: var(--radius);
+    padding: var(--space-4);
+    background: var(--bg-panel);
+    max-width: 420px;
+  }
+  .book-coup-half {
+    display: block;
+    font-family: var(--font-display);
+    font-size: var(--fs-lg);
+    line-height: 1.5;
+  }
+
+  .book-intro {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: var(--space-6) var(--space-5);
+  }
+  .book-intro h2 {
+    font-size: var(--fs-2xl);
+    border-bottom: var(--hairline) var(--line);
+    padding-bottom: var(--space-3);
+    margin-bottom: var(--space-5);
+  }
+  .book-intro p {
+    color: var(--text);
+    font-size: var(--fs-md);
+  }
+  .author-intro {
+    color: var(--text-dim);
+    font-size: var(--fs-sm);
+    border-left: 3px solid var(--gold);
+    padding-left: var(--space-4);
+  }
+
+  .book-toc {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: var(--space-6) var(--space-5) var(--space-8);
+  }
+  .toc-head {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-3);
+    border-bottom: var(--hairline) var(--line);
+    padding-bottom: var(--space-3);
+    margin-bottom: var(--space-4);
+  }
+  .toc-head h2 {
+    font-size: var(--fs-2xl);
+  }
+  .toc-count {
+    color: var(--gold);
+    font-family: var(--font-latin-display);
+  }
+  .toc-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: var(--space-6);
+  }
+  .toc-list li {
+    border-bottom: 1px dashed var(--line);
+    transition: background-color 0.2s ease;
+  }
+  .toc-list li:hover {
+    background: var(--bg-panel);
+  }
+  .toc-list a {
+    display: flex;
+    gap: var(--space-3);
+    padding: 0.55rem 0.4rem;
+    align-items: baseline;
+    color: var(--text);
+  }
+  .toc-list a:hover {
+    color: var(--cinnabar);
+  }
+  .toc-idx {
+    font-family: var(--font-latin-display);
+    font-style: italic;
+    color: var(--text-dim);
+    font-size: var(--fs-sm);
+    min-width: 2.4ch;
+  }
+  @media (max-width: 700px) {
+    .toc-list {
+      grid-template-columns: 1fr;
+    }
+    .book-hero {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .spine-art {
+      width: 120px;
+      min-height: 60px;
+      flex-direction: row;
+      padding: 0 var(--space-4);
+    }
+    .spine-art-title {
+      writing-mode: horizontal-tb;
+      font-size: var(--fs-lg);
+      max-height: none;
+    }
+  }
+</style>

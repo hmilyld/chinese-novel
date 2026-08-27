@@ -1,0 +1,507 @@
+{
+  "name": "龙图公案",
+  "bookType": "谴责公案",
+  "chapterCount": 100,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "第一回 阿弥陀佛讲和",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "第二回 观音菩萨托梦",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "第三回 嚼舌吐血",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "第四回 咬舌扣喉",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "第五回 锁　　匙",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "第六回 包　　袱",
+      "file": "005.md"
+    },
+    {
+      "index": 6,
+      "title": "第七回 葛叶飘来",
+      "file": "006.md"
+    },
+    {
+      "index": 7,
+      "title": "第八回 招帖收去",
+      "file": "007.md"
+    },
+    {
+      "index": 8,
+      "title": "第九回 夹底船",
+      "file": "008.md"
+    },
+    {
+      "index": 9,
+      "title": "第十回 接迹渡",
+      "file": "009.md"
+    },
+    {
+      "index": 10,
+      "title": "第十一回 黄菜叶",
+      "file": "010.md"
+    },
+    {
+      "index": 11,
+      "title": "第十二回 石狮子",
+      "file": "011.md"
+    },
+    {
+      "index": 12,
+      "title": "第十三回 偷　　鞋",
+      "file": "012.md"
+    },
+    {
+      "index": 13,
+      "title": "十四回 烘　　衣",
+      "file": "013.md"
+    },
+    {
+      "index": 14,
+      "title": "第十五回 龟入废井",
+      "file": "014.md"
+    },
+    {
+      "index": 15,
+      "title": "第十六回 鸟唤孤客",
+      "file": "015.md"
+    },
+    {
+      "index": 16,
+      "title": "第十七回 临江亭",
+      "file": "016.md"
+    },
+    {
+      "index": 17,
+      "title": "第十八回 白塔巷",
+      "file": "017.md"
+    },
+    {
+      "index": 18,
+      "title": "第十九回 血衫叫街",
+      "file": "018.md"
+    },
+    {
+      "index": 19,
+      "title": "第二十回 青靛记谷",
+      "file": "019.md"
+    },
+    {
+      "index": 20,
+      "title": "第二十一回 裁缝选官",
+      "file": "020.md"
+    },
+    {
+      "index": 21,
+      "title": "第二十二回 厨子做酒",
+      "file": "021.md"
+    },
+    {
+      "index": 22,
+      "title": "第二十三回 杀假僧",
+      "file": "022.md"
+    },
+    {
+      "index": 23,
+      "title": "第二十四回 卖皂靴",
+      "file": "023.md"
+    },
+    {
+      "index": 24,
+      "title": "第二十五回 忠节隐匿",
+      "file": "024.md"
+    },
+    {
+      "index": 25,
+      "title": "第二十六回 巧拙颠倒",
+      "file": "025.md"
+    },
+    {
+      "index": 26,
+      "title": "第二十七回 试假反试真",
+      "file": "026.md"
+    },
+    {
+      "index": 27,
+      "title": "第二十八回 死酒实死色",
+      "file": "027.md"
+    },
+    {
+      "index": 28,
+      "title": "第二十九回 毡套客",
+      "file": "028.md"
+    },
+    {
+      "index": 29,
+      "title": "第三十回 阴沟贼",
+      "file": "029.md"
+    },
+    {
+      "index": 30,
+      "title": "第三十一回 三宝殿",
+      "file": "030.md"
+    },
+    {
+      "index": 31,
+      "title": "第三十二回 二阴",
+      "file": "031.md"
+    },
+    {
+      "index": 32,
+      "title": "第三十三回 乳臭不",
+      "file": "032.md"
+    },
+    {
+      "index": 33,
+      "title": "第三十四回 妓饰无异",
+      "file": "033.md"
+    },
+    {
+      "index": 34,
+      "title": "第三十五回 辽东军",
+      "file": "034.md"
+    },
+    {
+      "index": 35,
+      "title": "第三十六回 岳州屠",
+      "file": "035.md"
+    },
+    {
+      "index": 36,
+      "title": "第三十七回 久　　鳏",
+      "file": "036.md"
+    },
+    {
+      "index": 37,
+      "title": "第三十八回 绝　　嗣",
+      "file": "037.md"
+    },
+    {
+      "index": 38,
+      "title": "第三十九回 耳畔有声",
+      "file": "038.md"
+    },
+    {
+      "index": 39,
+      "title": "第四十回 手牵二子",
+      "file": "039.md"
+    },
+    {
+      "index": 40,
+      "title": "第四十一回 窗外黑猿",
+      "file": "040.md"
+    },
+    {
+      "index": 41,
+      "title": "第四十二回 港口渔翁",
+      "file": "041.md"
+    },
+    {
+      "index": 42,
+      "title": "第四十三回 红衣妇",
+      "file": "042.md"
+    },
+    {
+      "index": 43,
+      "title": "第四十四回 乌盆子",
+      "file": "043.md"
+    },
+    {
+      "index": 44,
+      "title": "第四十五回 牙簪插地",
+      "file": "044.md"
+    },
+    {
+      "index": 45,
+      "title": "第四十六回 绣履埋泥",
+      "file": "045.md"
+    },
+    {
+      "index": 46,
+      "title": "第四十七回 虫蛀叶",
+      "file": "046.md"
+    },
+    {
+      "index": 47,
+      "title": "第四十八回 哑子棒",
+      "file": "047.md"
+    },
+    {
+      "index": 48,
+      "title": "第四十九回 割牛舌",
+      "file": "048.md"
+    },
+    {
+      "index": 49,
+      "title": "第五十回 骗　　马",
+      "file": "049.md"
+    },
+    {
+      "index": 50,
+      "title": "第五十一回 金　　鲤",
+      "file": "050.md"
+    },
+    {
+      "index": 51,
+      "title": "第五十二回 玉面猫",
+      "file": "051.md"
+    },
+    {
+      "index": 52,
+      "title": "第五十三回 移椅倚桐同玩月",
+      "file": "052.md"
+    },
+    {
+      "index": 53,
+      "title": "第五十四回 龙骑龙背试梅花",
+      "file": "053.md"
+    },
+    {
+      "index": 54,
+      "title": "第五十五回 夺伞破伞",
+      "file": "054.md"
+    },
+    {
+      "index": 55,
+      "title": "第五十六回 瞒刀还刀",
+      "file": "055.md"
+    },
+    {
+      "index": 56,
+      "title": "第五十七回 红牙球",
+      "file": "056.md"
+    },
+    {
+      "index": 57,
+      "title": "第五十八回 废花园",
+      "file": "057.md"
+    },
+    {
+      "index": 58,
+      "title": "第五十九回 恶师误徒",
+      "file": "058.md"
+    },
+    {
+      "index": 59,
+      "title": "第六十回 兽公私媳",
+      "file": "059.md"
+    },
+    {
+      "index": 60,
+      "title": "第六十一回 狮儿巷",
+      "file": "060.md"
+    },
+    {
+      "index": 61,
+      "title": "第六十二回 桑林镇",
+      "file": "061.md"
+    },
+    {
+      "index": 62,
+      "title": "第六十三回 斗粟三升米",
+      "file": "062.md"
+    },
+    {
+      "index": 63,
+      "title": "第六十四回 聿姓走东边",
+      "file": "063.md"
+    },
+    {
+      "index": 64,
+      "title": "第六十五回 地　　窨",
+      "file": "064.md"
+    },
+    {
+      "index": 65,
+      "title": "第六十六回 龙　　窟",
+      "file": "065.md"
+    },
+    {
+      "index": 66,
+      "title": "第六十七回 善恶罔报",
+      "file": "066.md"
+    },
+    {
+      "index": 67,
+      "title": "第六十八回 寿夭不均",
+      "file": "067.md"
+    },
+    {
+      "index": 68,
+      "title": "第六十九回 三娘子",
+      "file": "068.md"
+    },
+    {
+      "index": 69,
+      "title": "第七十回 贼总甲",
+      "file": "069.md"
+    },
+    {
+      "index": 70,
+      "title": "第七十一回 江岸黑龙",
+      "file": "070.md"
+    },
+    {
+      "index": 71,
+      "title": "第七十二回 牌下土地",
+      "file": "071.md"
+    },
+    {
+      "index": 72,
+      "title": "第七十三回 木　　印",
+      "file": "072.md"
+    },
+    {
+      "index": 73,
+      "title": "第七十四回 石　　碑",
+      "file": "073.md"
+    },
+    {
+      "index": 74,
+      "title": "第七十五回 屈杀英才",
+      "file": "074.md"
+    },
+    {
+      "index": 75,
+      "title": "第七十六回 侵冒大功",
+      "file": "075.md"
+    },
+    {
+      "index": 76,
+      "title": "第七十七回 扯画轴",
+      "file": "076.md"
+    },
+    {
+      "index": 77,
+      "title": "第七十八回 审遗嘱",
+      "file": "077.md"
+    },
+    {
+      "index": 78,
+      "title": "第七十九回 箕帚带入",
+      "file": "078.md"
+    },
+    {
+      "index": 79,
+      "title": "第八十回 房门谁开",
+      "file": "079.md"
+    },
+    {
+      "index": 80,
+      "title": "第八十一回 兔戴帽",
+      "file": "080.md"
+    },
+    {
+      "index": 81,
+      "title": "第八十二回 鹿随獐",
+      "file": "081.md"
+    },
+    {
+      "index": 82,
+      "title": "第八十三回 遗　　帕",
+      "file": "082.md"
+    },
+    {
+      "index": 83,
+      "title": "第八十四回 借　　衣",
+      "file": "083.md"
+    },
+    {
+      "index": 84,
+      "title": "第八十五回 壁隙窥光",
+      "file": "084.md"
+    },
+    {
+      "index": 85,
+      "title": "第八十六回 桷上得穴",
+      "file": "085.md"
+    },
+    {
+      "index": 86,
+      "title": "第八十七回 黑　　痣",
+      "file": "086.md"
+    },
+    {
+      "index": 87,
+      "title": "第八十八回 青　　粪",
+      "file": "087.md"
+    },
+    {
+      "index": 88,
+      "title": "第八十九回 和尚皱眉",
+      "file": "088.md"
+    },
+    {
+      "index": 89,
+      "title": "第九十回 西瓜开花",
+      "file": "089.md"
+    },
+    {
+      "index": 90,
+      "title": "第九十一回 铜钱插壁",
+      "file": "090.md"
+    },
+    {
+      "index": 91,
+      "title": "第九十二回 蜘蛛食卷",
+      "file": "091.md"
+    },
+    {
+      "index": 92,
+      "title": "第九十三回 尸数椽",
+      "file": "092.md"
+    },
+    {
+      "index": 93,
+      "title": "第九十四回 鬼推磨",
+      "file": "093.md"
+    },
+    {
+      "index": 94,
+      "title": "第九十五回 栽　　赃",
+      "file": "094.md"
+    },
+    {
+      "index": 95,
+      "title": "第九十六回 扮　　戏",
+      "file": "095.md"
+    },
+    {
+      "index": 96,
+      "title": "第九十七回 瓦器灯盏",
+      "file": "096.md"
+    },
+    {
+      "index": 97,
+      "title": "第九十八回 床被什物",
+      "file": "097.md"
+    },
+    {
+      "index": 98,
+      "title": "第九十九回 玉枢经",
+      "file": "098.md"
+    },
+    {
+      "index": 99,
+      "title": "第一百回 三官经",
+      "file": "099.md"
+    }
+  ]
+}

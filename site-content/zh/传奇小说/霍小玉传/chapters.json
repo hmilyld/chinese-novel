@@ -1,0 +1,17 @@
+{
+  "name": "霍小玉传",
+  "bookType": "传奇小说",
+  "chapterCount": 2,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "霍小玉传原文",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "霍小玉传翻译",
+      "file": "001.md"
+    }
+  ]
+}

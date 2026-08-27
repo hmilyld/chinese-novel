@@ -1,0 +1,42 @@
+{
+  "name": "五鼠闹东京",
+  "bookType": "英雄传奇",
+  "chapterCount": 7,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "◎ 引子",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "◎ 第一回 郑达教施俊读书",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "◎ 第二回 五鼠精下凡作怪",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "◎ 第三回 施俊途中遇妖精",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "◎ 第四回 施俊争妻讦告妖",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "◎ 第五回 真假施俊争妻告状",
+      "file": "005.md"
+    },
+    {
+      "index": 6,
+      "title": "◎ 第六回 包文拯天庭见玉帝",
+      "file": "006.md"
+    }
+  ]
+}

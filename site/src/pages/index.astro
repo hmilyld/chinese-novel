@@ -1,0 +1,13 @@
+---
+// Root → default locale /zh/
+export const prerender = true;
+const path = new URL(Astro.url).pathname;
+const target = path.replace(/^\/+/, "") ? path : "/zh/";
+if (target !== path) {
+  Astro.redirect(target, 302);
+}
+---
+
+<meta charset="utf-8" />
+<meta http-equiv="refresh" content={`0; url=${target}`} />
+<title>中国古典小说网</title>

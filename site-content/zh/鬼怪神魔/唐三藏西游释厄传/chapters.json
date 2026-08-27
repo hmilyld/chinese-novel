@@ -1,0 +1,337 @@
+{
+  "name": "唐三藏西游释厄传",
+  "bookType": "鬼怪神魔",
+  "chapterCount": 66,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "灵根育生源流出",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "石猴投师参众仙",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "石猴修道听讲经法",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "祖师秘传悟空道",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "悟空炼兵偷器械",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "仙奏石猴扰乱三界",
+      "file": "005.md"
+    },
+    {
+      "index": 6,
+      "title": "孙悟空拜授仙录",
+      "file": "006.md"
+    },
+    {
+      "index": 7,
+      "title": "玉皇遣将征悟空",
+      "file": "007.md"
+    },
+    {
+      "index": 8,
+      "title": "孙悟空玉封齐天大圣",
+      "file": "008.md"
+    },
+    {
+      "index": 9,
+      "title": "乱蟠桃大圣偷丹　 反天宫诸神捉怪",
+      "file": "009.md"
+    },
+    {
+      "index": 10,
+      "title": "观音赴会问原因",
+      "file": "010.md"
+    },
+    {
+      "index": 11,
+      "title": "小圣施威降大圣",
+      "file": "011.md"
+    },
+    {
+      "index": 12,
+      "title": "大仙助法收大圣",
+      "file": "012.md"
+    },
+    {
+      "index": 13,
+      "title": "八卦炉中逃大圣",
+      "file": "013.md"
+    },
+    {
+      "index": 14,
+      "title": "如来收压齐天圣",
+      "file": "014.md"
+    },
+    {
+      "index": 15,
+      "title": "五行山下定心猿",
+      "file": "015.md"
+    },
+    {
+      "index": 16,
+      "title": "我佛造经传极乐",
+      "file": "016.md"
+    },
+    {
+      "index": 17,
+      "title": "观音奉旨往长安",
+      "file": "017.md"
+    },
+    {
+      "index": 18,
+      "title": "唐太宗诏开南省",
+      "file": "018.md"
+    },
+    {
+      "index": 19,
+      "title": "陈光蕊及第成婚",
+      "file": "019.md"
+    },
+    {
+      "index": 20,
+      "title": "刘洪谋死陈光蕊",
+      "file": "020.md"
+    },
+    {
+      "index": 21,
+      "title": "小龙王救醒陈光蕊",
+      "file": "021.md"
+    },
+    {
+      "index": 22,
+      "title": "殷小姐思夫生子",
+      "file": "022.md"
+    },
+    {
+      "index": 23,
+      "title": "江流和尚思报本",
+      "file": "023.md"
+    },
+    {
+      "index": 24,
+      "title": "小姐嘱儿寻殷相",
+      "file": "024.md"
+    },
+    {
+      "index": 25,
+      "title": "殷丞相为婿报仇",
+      "file": "025.md"
+    },
+    {
+      "index": 26,
+      "title": "袁守诚妙算无私曲",
+      "file": "026.md"
+    },
+    {
+      "index": 27,
+      "title": "老龙王拙计犯天条",
+      "file": "027.md"
+    },
+    {
+      "index": 28,
+      "title": "太宗诏魏征救蛟龙",
+      "file": "028.md"
+    },
+    {
+      "index": 29,
+      "title": "魏征弈棋斩蛟龙",
+      "file": "029.md"
+    },
+    {
+      "index": 30,
+      "title": "二将军宫门镇鬼",
+      "file": "030.md"
+    },
+    {
+      "index": 31,
+      "title": "唐太宗地府还魂",
+      "file": "031.md"
+    },
+    {
+      "index": 32,
+      "title": "还受生唐王遵善果",
+      "file": "032.md"
+    },
+    {
+      "index": 33,
+      "title": "刘全舍死进瓜果",
+      "file": "033.md"
+    },
+    {
+      "index": 34,
+      "title": "刘全夫妇回阳世",
+      "file": "034.md"
+    },
+    {
+      "index": 35,
+      "title": "度孤魂萧瑀正空门",
+      "file": "035.md"
+    },
+    {
+      "index": 36,
+      "title": "玄奘秉诚建大会",
+      "file": "036.md"
+    },
+    {
+      "index": 37,
+      "title": "观音显像化金蝉",
+      "file": "037.md"
+    },
+    {
+      "index": 38,
+      "title": "唐太宗描写观音像",
+      "file": "038.md"
+    },
+    {
+      "index": 39,
+      "title": "三藏起程陷虎穴",
+      "file": "039.md"
+    },
+    {
+      "index": 40,
+      "title": "双叉岭伯钦留僧",
+      "file": "040.md"
+    },
+    {
+      "index": 41,
+      "title": "五行山心猿归正",
+      "file": "041.md"
+    },
+    {
+      "index": 42,
+      "title": "孙悟空除灭六贼",
+      "file": "042.md"
+    },
+    {
+      "index": 43,
+      "title": "观音显圣赐紧箍",
+      "file": "043.md"
+    },
+    {
+      "index": 44,
+      "title": "三藏授法降行者",
+      "file": "044.md"
+    },
+    {
+      "index": 45,
+      "title": "蛇盘山诸神暗佑",
+      "file": "045.md"
+    },
+    {
+      "index": 46,
+      "title": "孙行者降伏火龙",
+      "file": "046.md"
+    },
+    {
+      "index": 47,
+      "title": "观音收伏黑妖",
+      "file": "047.md"
+    },
+    {
+      "index": 48,
+      "title": "三藏收伏猪八戒",
+      "file": "048.md"
+    },
+    {
+      "index": 49,
+      "title": "唐三藏被妖捉获",
+      "file": "049.md"
+    },
+    {
+      "index": 50,
+      "title": "孙行者收妖救师",
+      "file": "050.md"
+    },
+    {
+      "index": 51,
+      "title": "猪八戒思淫被难",
+      "file": "051.md"
+    },
+    {
+      "index": 52,
+      "title": "孙行者五庄观内偷果",
+      "file": "052.md"
+    },
+    {
+      "index": 53,
+      "title": "唐三藏逐去孙行者",
+      "file": "053.md"
+    },
+    {
+      "index": 54,
+      "title": "唐三藏师徒被难",
+      "file": "054.md"
+    },
+    {
+      "index": 55,
+      "title": "猪八戒请行者救师",
+      "file": "055.md"
+    },
+    {
+      "index": 56,
+      "title": "孙悟空收妖救师",
+      "file": "056.md"
+    },
+    {
+      "index": 57,
+      "title": "唐三藏师徒被妖捉",
+      "file": "057.md"
+    },
+    {
+      "index": 58,
+      "title": "孙行者收伏妖魔",
+      "file": "058.md"
+    },
+    {
+      "index": 59,
+      "title": "唐三藏收妖过黑河",
+      "file": "059.md"
+    },
+    {
+      "index": 60,
+      "title": "观音老君收伏妖魔",
+      "file": "060.md"
+    },
+    {
+      "index": 61,
+      "title": "孙行者被弥猴紊乱",
+      "file": "061.md"
+    },
+    {
+      "index": 62,
+      "title": "三藏过朱紫、狮驼二国",
+      "file": "062.md"
+    },
+    {
+      "index": 63,
+      "title": "三藏历尽诸难已满",
+      "file": "063.md"
+    },
+    {
+      "index": 64,
+      "title": "三藏见佛求经",
+      "file": "064.md"
+    },
+    {
+      "index": 65,
+      "title": "唐三藏取经团圆",
+      "file": "065.md"
+    }
+  ]
+}

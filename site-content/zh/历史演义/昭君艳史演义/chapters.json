@@ -1,0 +1,97 @@
+{
+  "name": "昭君艳史演义",
+  "bookType": "历史演义",
+  "chapterCount": 18,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "第一章　总论和亲",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "第二章　深宫选妃",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "第三章　拒谏点绣",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "第四章　隐居课女",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "第五章　闻信惊惶",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "第六章　威逼应选",
+      "file": "005.md"
+    },
+    {
+      "index": 6,
+      "title": "第七章　馆驿献美",
+      "file": "006.md"
+    },
+    {
+      "index": 7,
+      "title": "第八章　忍痛长行",
+      "file": "007.md"
+    },
+    {
+      "index": 8,
+      "title": "第九章　旅邸思亲",
+      "file": "008.md"
+    },
+    {
+      "index": 9,
+      "title": "第十章　摹写艳影",
+      "file": "009.md"
+    },
+    {
+      "index": 10,
+      "title": "第十一章　画工索贿",
+      "file": "010.md"
+    },
+    {
+      "index": 11,
+      "title": "第十二章　改图倾陷",
+      "file": "011.md"
+    },
+    {
+      "index": 12,
+      "title": "第十三章　病榻哀吟",
+      "file": "012.md"
+    },
+    {
+      "index": 13,
+      "title": "第十四章　愿为胡妇",
+      "file": "013.md"
+    },
+    {
+      "index": 14,
+      "title": "第十五章　饯行惊美",
+      "file": "014.md"
+    },
+    {
+      "index": 15,
+      "title": "第十六章　诛奸出塞",
+      "file": "015.md"
+    },
+    {
+      "index": 16,
+      "title": "第十七章　琵琶诉怨",
+      "file": "016.md"
+    },
+    {
+      "index": 17,
+      "title": "第十八章　青冢流芳",
+      "file": "017.md"
+    }
+  ]
+}

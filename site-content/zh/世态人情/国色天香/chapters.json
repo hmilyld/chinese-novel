@@ -1,0 +1,192 @@
+{
+  "name": "国色天香",
+  "bookType": "世态人情",
+  "chapterCount": 37,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "前言",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "解题",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "简介",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "刻公余胜览国色天香序",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "卷一 龙会兰池录",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "卷二 刘生觅莲记（上）",
+      "file": "005.md"
+    },
+    {
+      "index": 6,
+      "title": "卷三 刘生觅莲记（下）",
+      "file": "006.md"
+    },
+    {
+      "index": 7,
+      "title": "卷四 寻芳雅集",
+      "file": "007.md"
+    },
+    {
+      "index": 8,
+      "title": "卷五 双卿笔记",
+      "file": "008.md"
+    },
+    {
+      "index": 9,
+      "title": "卷六 花神三妙传·白錦瓊奇會遇",
+      "file": "009.md"
+    },
+    {
+      "index": 10,
+      "title": "卷七 卖妻果报录",
+      "file": "010.md"
+    },
+    {
+      "index": 11,
+      "title": "卷七 联咏录",
+      "file": "011.md"
+    },
+    {
+      "index": 12,
+      "title": "卷七 酒蘖迷人传",
+      "file": "012.md"
+    },
+    {
+      "index": 13,
+      "title": "卷七 翠珠传",
+      "file": "013.md"
+    },
+    {
+      "index": 14,
+      "title": "卷七 买臣记",
+      "file": "014.md"
+    },
+    {
+      "index": 15,
+      "title": "卷七 醒迷录",
+      "file": "015.md"
+    },
+    {
+      "index": 16,
+      "title": "卷七 琴精记",
+      "file": "016.md"
+    },
+    {
+      "index": 17,
+      "title": "卷七 竹帚精记",
+      "file": "017.md"
+    },
+    {
+      "index": 18,
+      "title": "卷七 天缘奇遇（上）",
+      "file": "018.md"
+    },
+    {
+      "index": 19,
+      "title": "卷八 天缘奇遇（下）",
+      "file": "019.md"
+    },
+    {
+      "index": 20,
+      "title": "卷八 古杭红梅记",
+      "file": "020.md"
+    },
+    {
+      "index": 21,
+      "title": "卷八 相思记",
+      "file": "021.md"
+    },
+    {
+      "index": 22,
+      "title": "卷八 蛤蟆吐丹记",
+      "file": "022.md"
+    },
+    {
+      "index": 23,
+      "title": "卷九 金兰四友传",
+      "file": "023.md"
+    },
+    {
+      "index": 24,
+      "title": "卷九 东郭集",
+      "file": "024.md"
+    },
+    {
+      "index": 25,
+      "title": "卷九 笔辩论",
+      "file": "025.md"
+    },
+    {
+      "index": 26,
+      "title": "卷九 虬须叟传",
+      "file": "026.md"
+    },
+    {
+      "index": 27,
+      "title": "卷九 侠妇人传",
+      "file": "027.md"
+    },
+    {
+      "index": 28,
+      "title": "卷九 钟情丽集(上)",
+      "file": "028.md"
+    },
+    {
+      "index": 29,
+      "title": "卷十 钟情丽集（下）",
+      "file": "029.md"
+    },
+    {
+      "index": 30,
+      "title": "卷十 张于湖传",
+      "file": "030.md"
+    },
+    {
+      "index": 31,
+      "title": "卷十 续东窗事犯传",
+      "file": "031.md"
+    },
+    {
+      "index": 32,
+      "title": "卷十 清虚先生传",
+      "file": "032.md"
+    },
+    {
+      "index": 33,
+      "title": "卷十 丽香公子传",
+      "file": "033.md"
+    },
+    {
+      "index": 34,
+      "title": "卷十 飞白散人传",
+      "file": "034.md"
+    },
+    {
+      "index": 35,
+      "title": "卷十 玄明高士传",
+      "file": "035.md"
+    },
+    {
+      "index": 36,
+      "title": "卷十 风流乐趣",
+      "file": "036.md"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "name": "情史",
+  "bookType": "世态人情",
+  "chapterCount": 25,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "情史序",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "卷一 情贞类",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "卷二 情缘类",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "卷三　情私类",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "卷四　情侠类",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "卷五　情豪类",
+      "file": "005.md"
+    },
+    {
+      "index": 6,
+      "title": "卷六　情爱类",
+      "file": "006.md"
+    },
+    {
+      "index": 7,
+      "title": "卷七　情痴类",
+      "file": "007.md"
+    },
+    {
+      "index": 8,
+      "title": "卷八　情感类",
+      "file": "008.md"
+    },
+    {
+      "index": 9,
+      "title": "卷九 情幻类",
+      "file": "009.md"
+    },
+    {
+      "index": 10,
+      "title": "卷十 情灵类",
+      "file": "010.md"
+    },
+    {
+      "index": 11,
+      "title": "卷十一 情化类",
+      "file": "011.md"
+    },
+    {
+      "index": 12,
+      "title": "卷十二 情媒类",
+      "file": "012.md"
+    },
+    {
+      "index": 13,
+      "title": "卷十三 情憾类",
+      "file": "013.md"
+    },
+    {
+      "index": 14,
+      "title": "卷十四 情仇类",
+      "file": "014.md"
+    },
+    {
+      "index": 15,
+      "title": "卷十五 情芽类",
+      "file": "015.md"
+    },
+    {
+      "index": 16,
+      "title": "卷十六 情报类",
+      "file": "016.md"
+    },
+    {
+      "index": 17,
+      "title": "卷十七 情秽类",
+      "file": "017.md"
+    },
+    {
+      "index": 18,
+      "title": "卷十八 情累类",
+      "file": "018.md"
+    },
+    {
+      "index": 19,
+      "title": "卷十九 情疑类",
+      "file": "019.md"
+    },
+    {
+      "index": 20,
+      "title": "卷二十 情鬼类",
+      "file": "020.md"
+    },
+    {
+      "index": 21,
+      "title": "卷二十一 情妖类",
+      "file": "021.md"
+    },
+    {
+      "index": 22,
+      "title": "卷二十二　情外类",
+      "file": "022.md"
+    },
+    {
+      "index": 23,
+      "title": "卷二十三　情通类",
+      "file": "023.md"
+    },
+    {
+      "index": 24,
+      "title": "卷二十四　情迹类",
+      "file": "024.md"
+    }
+  ]
+}

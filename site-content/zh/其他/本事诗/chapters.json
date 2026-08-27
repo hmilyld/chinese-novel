@@ -1,0 +1,47 @@
+{
+  "name": "本事诗",
+  "bookType": "其他",
+  "chapterCount": 8,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "本事诗序目",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "情感第一",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "事感第二",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "高逸第三",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "怨愤第四",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "徵异第五",
+      "file": "005.md"
+    },
+    {
+      "index": 6,
+      "title": "徵咎第六",
+      "file": "006.md"
+    },
+    {
+      "index": 7,
+      "title": "嘲戏第七",
+      "file": "007.md"
+    }
+  ]
+}

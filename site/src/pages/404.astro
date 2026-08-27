@@ -1,0 +1,76 @@
+---
+import Base from "../layouts/Base.astro";
+---
+
+<Base locale="zh" title="404 · 中国古典小说网">
+  <section class="lost">
+    <div class="lost-wash" aria-hidden="true"></div>
+    <div class="lost-seal anim-stamp" aria-hidden="true">佚</div>
+    <h1 class="anim-fade-up anim-delay-1">卷帙散佚</h1>
+    <p class="anim-fade-up anim-delay-2">此页未寻得。或已轶散于书海之间。</p>
+    <a class="lost-home anim-fade-up anim-delay-3" href="/zh/">回到首页</a>
+  </section>
+</Base>
+
+<style>
+  .lost {
+    position: relative;
+    max-width: 560px;
+    margin: 0 auto;
+    padding: var(--space-8) var(--space-5);
+    text-align: center;
+    overflow: hidden;
+  }
+  .lost-wash {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 70% 50% at 50% 40%, rgba(42, 37, 24, 0.4) 0%, transparent 70%);
+    z-index: 0;
+  }
+  .lost-seal {
+    position: relative;
+    z-index: 1;
+    width: 4.5rem;
+    height: 4.5rem;
+    margin: 0 auto var(--space-5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--cinnabar);
+    color: var(--paper);
+    font-family: var(--font-display);
+    font-size: 2.2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 0 3px var(--bg), 0 0 0 4px var(--cinnabar),
+      var(--shadow-glow-cinnabar);
+  }
+  .lost h1 {
+    position: relative;
+    z-index: 1;
+    font-size: var(--fs-3xl);
+    margin-bottom: var(--space-3);
+  }
+  .lost p {
+    position: relative;
+    z-index: 1;
+    color: var(--text-dim);
+    margin-bottom: var(--space-6);
+  }
+  .lost-home {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0.6rem 1.4rem;
+    background: var(--cinnabar);
+    color: var(--paper);
+    border-radius: var(--radius);
+    font-family: var(--font-display);
+    transition: background-color 0.25s ease, box-shadow 0.25s ease;
+  }
+  .lost-home:hover {
+    background: var(--paper);
+    color: var(--cinnabar);
+    box-shadow: var(--shadow-glow-cinnabar);
+  }
+</style>

@@ -1,0 +1,79 @@
+{
+  "$ref": "#/definitions/books",
+  "definitions": {
+    "books": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "slug": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "bookType": {
+          "type": "string"
+        },
+        "dynasty": {
+          "type": "string"
+        },
+        "author": {
+          "type": "string"
+        },
+        "authors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "authorIntro": {
+          "type": "string"
+        },
+        "words": {
+          "type": "number"
+        },
+        "chapterCount": {
+          "type": "number"
+        },
+        "intro": {
+          "type": "string"
+        },
+        "translated": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "boolean"
+          }
+        },
+        "infoFile": {
+          "type": "string"
+        },
+        "chaptersFile": {
+          "type": "string"
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "slug",
+        "name",
+        "bookType",
+        "dynasty",
+        "author",
+        "authors",
+        "authorIntro",
+        "words",
+        "chapterCount",
+        "intro",
+        "translated",
+        "infoFile",
+        "chaptersFile"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

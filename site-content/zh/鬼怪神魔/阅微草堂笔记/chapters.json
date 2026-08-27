@@ -1,0 +1,152 @@
+{
+  "name": "阅微草堂笔记",
+  "bookType": "鬼怪神魔",
+  "chapterCount": 29,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "纪晓岚编书不写书",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "《阅微草堂笔记》原序",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "阅微草堂笔记·郑序",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "阅微草堂笔记·纪昀 诗二首",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "卷一 滦阳消夏录一",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "卷二　滦阳消夏录二",
+      "file": "005.md"
+    },
+    {
+      "index": 6,
+      "title": "卷三　滦阳消夏录三",
+      "file": "006.md"
+    },
+    {
+      "index": 7,
+      "title": "卷四　滦阳消夏录四",
+      "file": "007.md"
+    },
+    {
+      "index": 8,
+      "title": "卷五　滦阳消夏录五",
+      "file": "008.md"
+    },
+    {
+      "index": 9,
+      "title": "卷六　滦阳消夏录六",
+      "file": "009.md"
+    },
+    {
+      "index": 10,
+      "title": "卷七　如是我闻一",
+      "file": "010.md"
+    },
+    {
+      "index": 11,
+      "title": "卷八　如是我闻二",
+      "file": "011.md"
+    },
+    {
+      "index": 12,
+      "title": "卷九　如是我闻三",
+      "file": "012.md"
+    },
+    {
+      "index": 13,
+      "title": "卷十　如是我闻四",
+      "file": "013.md"
+    },
+    {
+      "index": 14,
+      "title": "卷十一　槐西杂志一",
+      "file": "014.md"
+    },
+    {
+      "index": 15,
+      "title": "卷十二　槐西杂志二",
+      "file": "015.md"
+    },
+    {
+      "index": 16,
+      "title": "卷十三　槐西杂志三",
+      "file": "016.md"
+    },
+    {
+      "index": 17,
+      "title": "卷十四　槐西杂志四",
+      "file": "017.md"
+    },
+    {
+      "index": 18,
+      "title": "卷十五　姑妄听之一",
+      "file": "018.md"
+    },
+    {
+      "index": 19,
+      "title": "卷十六　姑妄听之二",
+      "file": "019.md"
+    },
+    {
+      "index": 20,
+      "title": "十七　姑妄听之三",
+      "file": "020.md"
+    },
+    {
+      "index": 21,
+      "title": "卷十八　姑妄听之四",
+      "file": "021.md"
+    },
+    {
+      "index": 22,
+      "title": "卷十九　滦阳续录一",
+      "file": "022.md"
+    },
+    {
+      "index": 23,
+      "title": "卷二十　滦阳续录二",
+      "file": "023.md"
+    },
+    {
+      "index": 24,
+      "title": "卷二十一　滦阳续录三",
+      "file": "024.md"
+    },
+    {
+      "index": 25,
+      "title": "卷二十二　滦阳续录四",
+      "file": "025.md"
+    },
+    {
+      "index": 26,
+      "title": "卷二十三　滦阳续录五",
+      "file": "026.md"
+    },
+    {
+      "index": 27,
+      "title": "卷二十四　滦阳续录六",
+      "file": "027.md"
+    },
+    {
+      "index": 28,
+      "title": "附：纪汝佶六则",
+      "file": "028.md"
+    }
+  ]
+}

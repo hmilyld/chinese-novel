@@ -1,0 +1,37 @@
+{
+  "name": "西京杂记",
+  "bookType": "其他",
+  "chapterCount": 6,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "西京杂记卷一",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "西京杂记卷二",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "西京杂记卷三",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "西京杂记卷四",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "西京杂记卷五",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "西京杂记卷六",
+      "file": "005.md"
+    }
+  ]
+}

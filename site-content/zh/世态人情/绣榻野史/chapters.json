@@ -1,0 +1,17 @@
+{
+  "name": "绣榻野史",
+  "bookType": "世态人情",
+  "chapterCount": 2,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "上卷",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "下卷",
+      "file": "001.md"
+    }
+  ]
+}

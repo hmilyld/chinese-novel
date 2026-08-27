@@ -1,0 +1,37 @@
+{
+  "name": "幽冥录",
+  "bookType": "其他",
+  "chapterCount": 6,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "幽冥录（一）",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "幽冥录（二）",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "幽冥录（三）",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "幽冥录（四）",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "幽冥录（五）",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "幽冥录（六）",
+      "file": "005.md"
+    }
+  ]
+}

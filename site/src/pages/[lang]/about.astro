@@ -1,0 +1,238 @@
+---
+import type { Locale } from "../../lib/data";
+import Base from "../../layouts/Base.astro";
+import { translate } from "../../i18n/translate";
+
+export function getStaticPaths() {
+  return (["zh", "zh-TW"] as Locale[]).map((locale) => ({
+    params: { lang: locale },
+    props: { locale },
+  }));
+}
+
+const { locale } = Astro.props;
+const t = translate(locale);
+
+const genres = [
+  { key: "世态人情", count: 96, desc: "人情冷暖，世态炎凉" },
+  { key: "鬼怪神魔", count: 59, desc: "志怪传奇，神魔演绎" },
+  { key: "历史演义", count: 54, desc: "历朝演义，史传传奇" },
+  { key: "英雄传奇", count: 35, desc: "忠义豪杰，英雄气概" },
+  { key: "谴责公案", count: 39, desc: "讽刺官场，公案断狱" },
+  { key: "传奇小说", count: 20, desc: "唐宋传奇，文言短篇" },
+  { key: "其他", count: 138, desc: "笔记、话本、章回等" },
+];
+
+const sections = {
+  collection: {
+    title: "关于藏书",
+    body: "中国古典小说网致力于收集、整理和数字化中国古典小说。我们从世情世态、鬼怪神魔、历史演义、英雄传奇、谴责公案、传奇小说等多个门类中精选作品，涵盖从先秦到清末的经典篇目。所有文本均经过人工校对和数字化处理，去除水印、乱码和无关内容，为读者提供干净、舒适的阅读体验。"
+  },
+  reading: {
+    title: "阅读体验",
+    body: "网站支持横排与竖排两种阅读模式。竖排阅读还原了线装书的传统排版方式，文字从右至左、从上至下排列，适合沉浸式阅读。横排阅读则更符合现代习惯。读者可以自由调整字体大小，切换明暗主题，在不同设备上都能获得舒适的阅读体验。"
+  },
+  i18n: {
+    title: "简繁支持",
+    body: "目前网站提供简体中文和繁体中文两种版本，繁体版本通过 OpenCC 自动转换，目录与正文均已同步。我们希望通过简繁双语支持，让不同文字习惯的读者都能舒适地阅读中国古典文学。"
+  },
+  data: {
+    title: "数据来源",
+    body: "本站数据源自世情世态文献书院收藏的古典小说电子文本，经过系统化的整理和格式转换。每部作品包含完整的章回目录、作者信息、朝代标注和作品简介。所有内容仅供学习和研究使用，版权归原作者所有。"
+  },
+  tech: {
+    title: "技术实现",
+    body: "本站使用 Astro 构建静态站点，通过自动化管道将原始 HTML 文本转换为 Markdown 格式，再生成可浏览的网页。支持 441 部作品、超过 20,000 个章节的快速检索和浏览。所有页面均针对移动端进行了优化，支持离线阅读。"
+  }
+};
+---
+
+<Base locale={locale} title={t("about.title")} description="中国古典小说网收录441部古典小说，共计20,616回目，七千余万字。支持横竖排阅读、简繁切换。">
+  <section class="about">
+    <div class="about-seal anim-stamp" aria-hidden="true">典</div>
+    <h1 class="anim-fade-up anim-delay-1">{t("about.title")}</h1>
+
+    <div class="about-stats anim-fade-up anim-delay-2">
+      <div class="about-stat">
+        <span class="about-stat-num">441</span>
+        <span class="about-stat-label">{t("hero.statBooks")}</span>
+      </div>
+      <div class="about-stat-sep" aria-hidden="true"></div>
+      <div class="about-stat">
+        <span class="about-stat-num">20,616</span>
+        <span class="about-stat-label">{t("hero.statChapters")}</span>
+      </div>
+      <div class="about-stat-sep" aria-hidden="true"></div>
+      <div class="about-stat">
+        <span class="about-stat-num">72,572,802</span>
+        <span class="about-stat-label">{t("hero.statWords")}字</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-sections">
+    <div class="about-block anim-fade-up">
+      <h2>{sections.collection.title}</h2>
+      <p>{sections.collection.body}</p>
+    </div>
+
+    <div class="about-genres anim-fade-up">
+      <h2>门类概览</h2>
+      <div class="genre-list">
+        {genres.map((g) => (
+          <div class="genre-item">
+            <span class="genre-name">{g.key}</span>
+            <span class="genre-count">{g.count}</span>
+            <span class="genre-desc">{g.desc}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div class="about-block anim-fade-up">
+      <h2>{sections.reading.title}</h2>
+      <p>{sections.reading.body}</p>
+    </div>
+
+    <div class="about-block anim-fade-up">
+      <h2>{sections.i18n.title}</h2>
+      <p>{sections.i18n.body}</p>
+    </div>
+
+    <div class="about-block anim-fade-up">
+      <h2>{sections.data.title}</h2>
+      <p>{sections.data.body}</p>
+    </div>
+
+    <div class="about-block anim-fade-up">
+      <h2>{sections.tech.title}</h2>
+      <p>{sections.tech.body}</p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .about {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: var(--space-8) var(--space-5) var(--space-6);
+    text-align: center;
+  }
+  .about-seal {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.8rem;
+    height: 3.8rem;
+    background: var(--cinnabar);
+    color: var(--paper);
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    border-radius: 5px;
+    margin-bottom: var(--space-5);
+    box-shadow: 0 0 0 3px var(--bg), 0 0 0 4px var(--cinnabar),
+      var(--shadow-glow-cinnabar);
+  }
+  .about h1 {
+    font-size: var(--fs-3xl);
+    margin-bottom: var(--space-5);
+  }
+  .about-stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-5);
+    padding-top: var(--space-6);
+    border-top: var(--hairline) var(--line);
+  }
+  .about-stat { text-align: center; }
+  .about-stat-num {
+    display: block;
+    font-family: var(--font-latin-display);
+    font-size: var(--fs-3xl);
+    color: var(--gold);
+    line-height: 1.1;
+  }
+  .about-stat-label {
+    font-size: var(--fs-sm);
+    color: var(--text-dim);
+  }
+  .about-stat-sep {
+    width: 1px;
+    height: 2.5rem;
+    background: var(--line);
+  }
+
+  /* content sections */
+  .about-sections {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: var(--space-6) var(--space-5) var(--space-8);
+  }
+  .about-block {
+    margin-bottom: var(--space-7);
+  }
+  .about-block h2 {
+    font-size: var(--fs-2xl);
+    border-bottom: var(--hairline) var(--line);
+    padding-bottom: var(--space-3);
+    margin-bottom: var(--space-4);
+  }
+  .about-block p {
+    font-size: var(--fs-md);
+    color: var(--text);
+    line-height: 2;
+  }
+
+  /* genres grid */
+  .about-genres {
+    margin-bottom: var(--space-7);
+  }
+  .about-genres h2 {
+    font-size: var(--fs-2xl);
+    border-bottom: var(--hairline) var(--line);
+    padding-bottom: var(--space-3);
+    margin-bottom: var(--space-4);
+  }
+  .genre-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--space-3);
+  }
+  .genre-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    padding: var(--space-3) var(--space-4);
+    border: var(--hairline) var(--line);
+    border-radius: var(--radius);
+    background: var(--bg-panel);
+  }
+  .genre-name {
+    font-family: var(--font-display);
+    font-size: var(--fs-lg);
+  }
+  .genre-count {
+    font-family: var(--font-latin-display);
+    color: var(--gold);
+    font-size: var(--fs-sm);
+  }
+  .genre-desc {
+    color: var(--text-dim);
+    font-size: var(--fs-xs);
+  }
+
+  @media (max-width: 600px) {
+    .about-stats {
+      flex-direction: column;
+      gap: var(--space-4);
+    }
+    .about-stat-sep {
+      width: 2rem;
+      height: 1px;
+    }
+    .genre-list {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

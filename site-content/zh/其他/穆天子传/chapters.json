@@ -1,0 +1,17 @@
+{
+  "name": "穆天子传",
+  "bookType": "其他",
+  "chapterCount": 2,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "卷之一",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "卷之二",
+      "file": "001.md"
+    }
+  ]
+}

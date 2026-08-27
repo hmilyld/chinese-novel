@@ -1,0 +1,22 @@
+{
+  "name": "归田录",
+  "bookType": "其他",
+  "chapterCount": 3,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "自序",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "归田录卷一",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "归田录卷二",
+      "file": "002.md"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "飞燕外传",
+  "bookType": "世态人情",
+  "chapterCount": 4,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "飞燕外传 原文及注释",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "千古艳情第一篇——《飞燕外传》",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "赵飞燕别传 原文及白话文",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "中国汉朝时期成帝皇后赵飞燕简介",
+      "file": "003.md"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "笔梨园",
+  "bookType": "世态人情",
+  "chapterCount": 7,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "说明",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "第一回　假风流幸逅真风流",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "第二回　善扫兴又遭恶扫兴",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "第三回　好朋友盗金娶美妇",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "第四回　侠窈窕私蓄赠佣人",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "第五回　长安街旧仆报旧主日",
+      "file": "005.md"
+    },
+    {
+      "index": 6,
+      "title": "第六回　瓜州店福姑遇禄姑",
+      "file": "006.md"
+    }
+  ]
+}

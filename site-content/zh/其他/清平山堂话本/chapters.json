@@ -1,0 +1,132 @@
+{
+  "name": "清平山堂话本",
+  "bookType": "其他",
+  "chapterCount": 25,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "柳耆卿诗酒玩江楼记",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "简帖和尚",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "西湖三塔记",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "合同文字记",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "风月瑞仙亭",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "蓝桥记",
+      "file": "005.md"
+    },
+    {
+      "index": 6,
+      "title": "快嘴李翠莲记",
+      "file": "006.md"
+    },
+    {
+      "index": 7,
+      "title": "洛阳三怪记",
+      "file": "007.md"
+    },
+    {
+      "index": 8,
+      "title": "风月相思",
+      "file": "008.md"
+    },
+    {
+      "index": 9,
+      "title": "张子房慕道记",
+      "file": "009.md"
+    },
+    {
+      "index": 10,
+      "title": "阴骘积善",
+      "file": "010.md"
+    },
+    {
+      "index": 11,
+      "title": "陈巡检梅岭失妻记",
+      "file": "011.md"
+    },
+    {
+      "index": 12,
+      "title": "五戒禅师私红莲记",
+      "file": "012.md"
+    },
+    {
+      "index": 13,
+      "title": "刎颈鸳鸯会",
+      "file": "013.md"
+    },
+    {
+      "index": 14,
+      "title": "杨温拦路虎传",
+      "file": "014.md"
+    },
+    {
+      "index": 15,
+      "title": "花灯轿莲女成佛记",
+      "file": "015.md"
+    },
+    {
+      "index": 16,
+      "title": "曹伯明错勘赃记",
+      "file": "016.md"
+    },
+    {
+      "index": 17,
+      "title": "错认尸",
+      "file": "017.md"
+    },
+    {
+      "index": 18,
+      "title": "董永遇仙传",
+      "file": "018.md"
+    },
+    {
+      "index": 19,
+      "title": "戒指儿记",
+      "file": "019.md"
+    },
+    {
+      "index": 20,
+      "title": "羊角哀死战荆轲",
+      "file": "020.md"
+    },
+    {
+      "index": 21,
+      "title": "死生交范张鸡黍",
+      "file": "021.md"
+    },
+    {
+      "index": 22,
+      "title": "老冯唐直谏汉文帝",
+      "file": "022.md"
+    },
+    {
+      "index": 23,
+      "title": "汉李广世号飞将军",
+      "file": "023.md"
+    },
+    {
+      "index": 24,
+      "title": "夔关姚卞吊诸葛",
+      "file": "024.md"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "萤窗清玩",
+  "bookType": "世态人情",
+  "chapterCount": 5,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "前言",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "第一卷　连理枝",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "第二卷　玉管笔",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "第三卷　游春梦",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "第四卷　碧玉箫",
+      "file": "004.md"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "name": "通天乐",
+  "bookType": "其他",
+  "chapterCount": 13,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "自叙",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "第一种",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "第二种",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "第三种",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "第四种",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "第五种",
+      "file": "005.md"
+    },
+    {
+      "index": 6,
+      "title": "第六种",
+      "file": "006.md"
+    },
+    {
+      "index": 7,
+      "title": "第七种",
+      "file": "007.md"
+    },
+    {
+      "index": 8,
+      "title": "第八种",
+      "file": "008.md"
+    },
+    {
+      "index": 9,
+      "title": "第九种",
+      "file": "009.md"
+    },
+    {
+      "index": 10,
+      "title": "第十种",
+      "file": "010.md"
+    },
+    {
+      "index": 11,
+      "title": "第十一种",
+      "file": "011.md"
+    },
+    {
+      "index": 12,
+      "title": "第十二种",
+      "file": "012.md"
+    }
+  ]
+}

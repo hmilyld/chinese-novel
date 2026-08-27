@@ -1,0 +1,97 @@
+{
+  "name": "钟吕传道集",
+  "bookType": "其他",
+  "chapterCount": 18,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "论真仙第一",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "论大道第二",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "论天地第三",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "论日月第四",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "论四时第五",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "论五行第六",
+      "file": "005.md"
+    },
+    {
+      "index": 6,
+      "title": "论水火第七",
+      "file": "006.md"
+    },
+    {
+      "index": 7,
+      "title": "论龙虎第八",
+      "file": "007.md"
+    },
+    {
+      "index": 8,
+      "title": "论丹药第九",
+      "file": "008.md"
+    },
+    {
+      "index": 9,
+      "title": "论铅汞第十",
+      "file": "009.md"
+    },
+    {
+      "index": 10,
+      "title": "论抽添第十一",
+      "file": "010.md"
+    },
+    {
+      "index": 11,
+      "title": "论河车第十二",
+      "file": "011.md"
+    },
+    {
+      "index": 12,
+      "title": "论还丹第十三",
+      "file": "012.md"
+    },
+    {
+      "index": 13,
+      "title": "论炼形第十四",
+      "file": "013.md"
+    },
+    {
+      "index": 14,
+      "title": "论朝元第十五",
+      "file": "014.md"
+    },
+    {
+      "index": 15,
+      "title": "论内观第十六",
+      "file": "015.md"
+    },
+    {
+      "index": 16,
+      "title": "论魔难第十七",
+      "file": "016.md"
+    },
+    {
+      "index": 17,
+      "title": "论证验第十八",
+      "file": "017.md"
+    }
+  ]
+}

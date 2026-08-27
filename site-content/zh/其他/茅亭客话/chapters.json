@@ -1,0 +1,452 @@
+{
+  "name": "茅亭客话",
+  "bookType": "其他",
+  "chapterCount": 89,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "蜀先兆",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "太平木",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "甘露",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "天尊木",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "虎盗屏迹",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "蜀无大水",
+      "file": "005.md"
+    },
+    {
+      "index": 6,
+      "title": "车辙迹",
+      "file": "006.md"
+    },
+    {
+      "index": 7,
+      "title": "程君友",
+      "file": "007.md"
+    },
+    {
+      "index": 8,
+      "title": "雍道者",
+      "file": "008.md"
+    },
+    {
+      "index": 9,
+      "title": "王客",
+      "file": "009.md"
+    },
+    {
+      "index": 10,
+      "title": "崔尊师",
+      "file": "010.md"
+    },
+    {
+      "index": 11,
+      "title": "范处士",
+      "file": "011.md"
+    },
+    {
+      "index": 12,
+      "title": "李处士",
+      "file": "012.md"
+    },
+    {
+      "index": 13,
+      "title": "苏推官",
+      "file": "013.md"
+    },
+    {
+      "index": 14,
+      "title": "张海上",
+      "file": "014.md"
+    },
+    {
+      "index": 15,
+      "title": "费尊师",
+      "file": "015.md"
+    },
+    {
+      "index": 16,
+      "title": "冯山人",
+      "file": "016.md"
+    },
+    {
+      "index": 17,
+      "title": "李四郎",
+      "file": "017.md"
+    },
+    {
+      "index": 18,
+      "title": "淘沙子",
+      "file": "018.md"
+    },
+    {
+      "index": 19,
+      "title": "张道者",
+      "file": "019.md"
+    },
+    {
+      "index": 20,
+      "title": "大觉禅师",
+      "file": "020.md"
+    },
+    {
+      "index": 21,
+      "title": "张平云",
+      "file": "021.md"
+    },
+    {
+      "index": 22,
+      "title": "王居士",
+      "file": "022.md"
+    },
+    {
+      "index": 23,
+      "title": "勾居士",
+      "file": "023.md"
+    },
+    {
+      "index": 24,
+      "title": "味江山人",
+      "file": "024.md"
+    },
+    {
+      "index": 25,
+      "title": "蘭亭客序",
+      "file": "025.md"
+    },
+    {
+      "index": 26,
+      "title": "家居泰",
+      "file": "026.md"
+    },
+    {
+      "index": 27,
+      "title": "周寫貌",
+      "file": "027.md"
+    },
+    {
+      "index": 28,
+      "title": "丁元和",
+      "file": "028.md"
+    },
+    {
+      "index": 29,
+      "title": "王太廟",
+      "file": "029.md"
+    },
+    {
+      "index": 30,
+      "title": "劉長官",
+      "file": "030.md"
+    },
+    {
+      "index": 31,
+      "title": "陳損之",
+      "file": "031.md"
+    },
+    {
+      "index": 32,
+      "title": "史見魂",
+      "file": "032.md"
+    },
+    {
+      "index": 33,
+      "title": "女先生",
+      "file": "033.md"
+    },
+    {
+      "index": 34,
+      "title": "李聾僧",
+      "file": "034.md"
+    },
+    {
+      "index": 35,
+      "title": "勾生",
+      "file": "035.md"
+    },
+    {
+      "index": 36,
+      "title": "黎海陽",
+      "file": "036.md"
+    },
+    {
+      "index": 37,
+      "title": "白蝦蟇",
+      "file": "037.md"
+    },
+    {
+      "index": 38,
+      "title": "鮮于耆宿",
+      "file": "038.md"
+    },
+    {
+      "index": 39,
+      "title": "食蝦蟇野菌",
+      "file": "039.md"
+    },
+    {
+      "index": 40,
+      "title": "虹蜺",
+      "file": "040.md"
+    },
+    {
+      "index": 41,
+      "title": "避雷",
+      "file": "041.md"
+    },
+    {
+      "index": 42,
+      "title": "雨雹",
+      "file": "042.md"
+    },
+    {
+      "index": 43,
+      "title": "雉龍",
+      "file": "043.md"
+    },
+    {
+      "index": 44,
+      "title": "李老",
+      "file": "044.md"
+    },
+    {
+      "index": 45,
+      "title": "慈母池",
+      "file": "045.md"
+    },
+    {
+      "index": 46,
+      "title": "龍女堂",
+      "file": "046.md"
+    },
+    {
+      "index": 47,
+      "title": "悼蜀詩",
+      "file": "047.md"
+    },
+    {
+      "index": 48,
+      "title": "艾延祚",
+      "file": "048.md"
+    },
+    {
+      "index": 49,
+      "title": "夷人妇",
+      "file": "049.md"
+    },
+    {
+      "index": 50,
+      "title": "张光赞",
+      "file": "050.md"
+    },
+    {
+      "index": 51,
+      "title": "金相轮",
+      "file": "051.md"
+    },
+    {
+      "index": 52,
+      "title": "金宝化为烟",
+      "file": "052.md"
+    },
+    {
+      "index": 53,
+      "title": "奢侈不久",
+      "file": "053.md"
+    },
+    {
+      "index": 54,
+      "title": "刘旴",
+      "file": "054.md"
+    },
+    {
+      "index": 55,
+      "title": "哀亡友辞",
+      "file": "055.md"
+    },
+    {
+      "index": 56,
+      "title": "郝逢传",
+      "file": "056.md"
+    },
+    {
+      "index": 57,
+      "title": "陈季和",
+      "file": "057.md"
+    },
+    {
+      "index": 58,
+      "title": "鬻屦妪",
+      "file": "058.md"
+    },
+    {
+      "index": 59,
+      "title": "盲女",
+      "file": "059.md"
+    },
+    {
+      "index": 60,
+      "title": "铁骨鱼",
+      "file": "060.md"
+    },
+    {
+      "index": 61,
+      "title": "瑞牡丹",
+      "file": "061.md"
+    },
+    {
+      "index": 62,
+      "title": "寓孔雀书",
+      "file": "062.md"
+    },
+    {
+      "index": 63,
+      "title": "滕处士",
+      "file": "063.md"
+    },
+    {
+      "index": 64,
+      "title": "好画虎",
+      "file": "064.md"
+    },
+    {
+      "index": 65,
+      "title": "葭萌二客",
+      "file": "065.md"
+    },
+    {
+      "index": 66,
+      "title": "虎化为僧",
+      "file": "066.md"
+    },
+    {
+      "index": 67,
+      "title": "李吹口",
+      "file": "067.md"
+    },
+    {
+      "index": 68,
+      "title": "天仓洞",
+      "file": "068.md"
+    },
+    {
+      "index": 69,
+      "title": "鬻龙骨",
+      "file": "069.md"
+    },
+    {
+      "index": 70,
+      "title": "试金石",
+      "file": "070.md"
+    },
+    {
+      "index": 71,
+      "title": "僧繇阁",
+      "file": "071.md"
+    },
+    {
+      "index": 72,
+      "title": "石像",
+      "file": "072.md"
+    },
+    {
+      "index": 73,
+      "title": "采枸杞",
+      "file": "073.md"
+    },
+    {
+      "index": 74,
+      "title": "赵公山",
+      "file": "074.md"
+    },
+    {
+      "index": 75,
+      "title": "鹿水溪蛇",
+      "file": "075.md"
+    },
+    {
+      "index": 76,
+      "title": "鱼化为石",
+      "file": "076.md"
+    },
+    {
+      "index": 77,
+      "title": "赵十九",
+      "file": "077.md"
+    },
+    {
+      "index": 78,
+      "title": "景山人",
+      "file": "078.md"
+    },
+    {
+      "index": 79,
+      "title": "弹鸳鸯",
+      "file": "079.md"
+    },
+    {
+      "index": 80,
+      "title": "蚕馒头",
+      "file": "080.md"
+    },
+    {
+      "index": 81,
+      "title": "太子大师",
+      "file": "081.md"
+    },
+    {
+      "index": 82,
+      "title": "孙处士",
+      "file": "082.md"
+    },
+    {
+      "index": 83,
+      "title": "黄处士",
+      "file": "083.md"
+    },
+    {
+      "index": 84,
+      "title": "程先生",
+      "file": "084.md"
+    },
+    {
+      "index": 85,
+      "title": "杜大举",
+      "file": "085.md"
+    },
+    {
+      "index": 86,
+      "title": "任先生",
+      "file": "086.md"
+    },
+    {
+      "index": 87,
+      "title": "谭居士",
+      "file": "087.md"
+    },
+    {
+      "index": 88,
+      "title": "小童处士",
+      "file": "088.md"
+    }
+  ]
+}

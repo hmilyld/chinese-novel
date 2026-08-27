@@ -1,0 +1,127 @@
+{
+  "name": "唐语林",
+  "bookType": "其他",
+  "chapterCount": 24,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "关于《唐语林》",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "卷一 德行",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "卷一 言语",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "卷一 政事上",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "卷二 政事下",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "卷二 文学",
+      "file": "005.md"
+    },
+    {
+      "index": 6,
+      "title": "卷三 方正",
+      "file": "006.md"
+    },
+    {
+      "index": 7,
+      "title": "卷三 雅量",
+      "file": "007.md"
+    },
+    {
+      "index": 8,
+      "title": "卷三 识鉴",
+      "file": "008.md"
+    },
+    {
+      "index": 9,
+      "title": "卷三 赏誉",
+      "file": "009.md"
+    },
+    {
+      "index": 10,
+      "title": "卷三 品藻",
+      "file": "010.md"
+    },
+    {
+      "index": 11,
+      "title": "卷三 规箴",
+      "file": "011.md"
+    },
+    {
+      "index": 12,
+      "title": "卷三 夙慧",
+      "file": "012.md"
+    },
+    {
+      "index": 13,
+      "title": "卷四 豪爽",
+      "file": "013.md"
+    },
+    {
+      "index": 14,
+      "title": "卷四 容止",
+      "file": "014.md"
+    },
+    {
+      "index": 15,
+      "title": "卷四 自新",
+      "file": "015.md"
+    },
+    {
+      "index": 16,
+      "title": "卷四 企羡",
+      "file": "016.md"
+    },
+    {
+      "index": 17,
+      "title": "卷四 伤逝",
+      "file": "017.md"
+    },
+    {
+      "index": 18,
+      "title": "卷四 栖逸",
+      "file": "018.md"
+    },
+    {
+      "index": 19,
+      "title": "卷五 补遗（起高祖至代宗）",
+      "file": "019.md"
+    },
+    {
+      "index": 20,
+      "title": "卷六·补遗（起德宗至文宗）",
+      "file": "020.md"
+    },
+    {
+      "index": 21,
+      "title": "卷七 补遗（起武宗至昭宗）",
+      "file": "021.md"
+    },
+    {
+      "index": 22,
+      "title": "卷八·补遗（无时代）",
+      "file": "022.md"
+    },
+    {
+      "index": 23,
+      "title": "辑佚",
+      "file": "023.md"
+    }
+  ]
+}

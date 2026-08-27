@@ -1,0 +1,222 @@
+{
+  "name": "酉阳杂俎",
+  "bookType": "其他",
+  "chapterCount": 43,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "提要",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "自序",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "卷一·忠志",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "卷一·礼异",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "卷一·天咫",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "卷二·玉格",
+      "file": "005.md"
+    },
+    {
+      "index": 6,
+      "title": "卷二·壶史",
+      "file": "006.md"
+    },
+    {
+      "index": 7,
+      "title": "卷三·贝编",
+      "file": "007.md"
+    },
+    {
+      "index": 8,
+      "title": "卷四·境异",
+      "file": "008.md"
+    },
+    {
+      "index": 9,
+      "title": "卷四·喜兆",
+      "file": "009.md"
+    },
+    {
+      "index": 10,
+      "title": "卷四·祸兆",
+      "file": "010.md"
+    },
+    {
+      "index": 11,
+      "title": "卷四·物革",
+      "file": "011.md"
+    },
+    {
+      "index": 12,
+      "title": "卷五·诡习",
+      "file": "012.md"
+    },
+    {
+      "index": 13,
+      "title": "卷五·怪术",
+      "file": "013.md"
+    },
+    {
+      "index": 14,
+      "title": "卷六·艺绝",
+      "file": "014.md"
+    },
+    {
+      "index": 15,
+      "title": "卷六·器奇",
+      "file": "015.md"
+    },
+    {
+      "index": 16,
+      "title": "卷六·乐",
+      "file": "016.md"
+    },
+    {
+      "index": 17,
+      "title": "卷七·酒食",
+      "file": "017.md"
+    },
+    {
+      "index": 18,
+      "title": "卷七·医",
+      "file": "018.md"
+    },
+    {
+      "index": 19,
+      "title": "卷八·黥",
+      "file": "019.md"
+    },
+    {
+      "index": 20,
+      "title": "卷八·雷",
+      "file": "020.md"
+    },
+    {
+      "index": 21,
+      "title": "卷八·梦",
+      "file": "021.md"
+    },
+    {
+      "index": 22,
+      "title": "卷九·事感",
+      "file": "022.md"
+    },
+    {
+      "index": 23,
+      "title": "卷九·盗侠",
+      "file": "023.md"
+    },
+    {
+      "index": 24,
+      "title": "卷十·物异",
+      "file": "024.md"
+    },
+    {
+      "index": 25,
+      "title": "卷十一·广知",
+      "file": "025.md"
+    },
+    {
+      "index": 26,
+      "title": "卷十三·冥迹",
+      "file": "026.md"
+    },
+    {
+      "index": 27,
+      "title": "卷十三·尸穸",
+      "file": "027.md"
+    },
+    {
+      "index": 28,
+      "title": "卷十四·诺皋记上",
+      "file": "028.md"
+    },
+    {
+      "index": 29,
+      "title": "卷十五·诺皋记下",
+      "file": "029.md"
+    },
+    {
+      "index": 30,
+      "title": "卷十六·广动植之一",
+      "file": "030.md"
+    },
+    {
+      "index": 31,
+      "title": "卷十七·广动植之二",
+      "file": "031.md"
+    },
+    {
+      "index": 32,
+      "title": "卷十八·广动植之三",
+      "file": "032.md"
+    },
+    {
+      "index": 33,
+      "title": "卷十九·广动植类之四",
+      "file": "033.md"
+    },
+    {
+      "index": 34,
+      "title": "卷二十·肉攫部",
+      "file": "034.md"
+    },
+    {
+      "index": 35,
+      "title": "续集卷一·支诺皋上",
+      "file": "035.md"
+    },
+    {
+      "index": 36,
+      "title": "续集卷二·支诺皋中",
+      "file": "036.md"
+    },
+    {
+      "index": 37,
+      "title": "续集卷三·支诺皋下",
+      "file": "037.md"
+    },
+    {
+      "index": 38,
+      "title": "续集卷四·贬误",
+      "file": "038.md"
+    },
+    {
+      "index": 39,
+      "title": "续集卷五·寺塔记上",
+      "file": "039.md"
+    },
+    {
+      "index": 40,
+      "title": "续集卷八·支动",
+      "file": "040.md"
+    },
+    {
+      "index": 41,
+      "title": "续集卷九·支植上",
+      "file": "041.md"
+    },
+    {
+      "index": 42,
+      "title": "续集卷十·支植下",
+      "file": "042.md"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "name": "罗织经",
+  "bookType": "其他",
+  "chapterCount": 12,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "阅人卷一",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "事上卷二",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "治下卷三",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "控权卷四",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "制敌卷五",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "固荣卷六",
+      "file": "005.md"
+    },
+    {
+      "index": 6,
+      "title": "保身卷七",
+      "file": "006.md"
+    },
+    {
+      "index": 7,
+      "title": "察奸卷八",
+      "file": "007.md"
+    },
+    {
+      "index": 8,
+      "title": "谋划卷九",
+      "file": "008.md"
+    },
+    {
+      "index": 9,
+      "title": "问罪卷十",
+      "file": "009.md"
+    },
+    {
+      "index": 10,
+      "title": "刑罚卷十一",
+      "file": "010.md"
+    },
+    {
+      "index": 11,
+      "title": "瓜蔓卷十二",
+      "file": "011.md"
+    }
+  ]
+}

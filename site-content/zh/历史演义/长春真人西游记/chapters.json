@@ -1,0 +1,22 @@
+{
+  "name": "长春真人西游记",
+  "bookType": "历史演义",
+  "chapterCount": 3,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "长春真人西游记卷上",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "长春真人西游记卷下",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "长春真人西游记附录",
+      "file": "002.md"
+    }
+  ]
+}

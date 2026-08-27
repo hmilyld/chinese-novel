@@ -1,0 +1,10 @@
+node_modules
+dist
+site-content/zh-TW
+site-content/books.json
+scripts/.meta-parts
+scripts/glossaries
+scripts/translate-usage.jsonl
+*.min.js
+*.min.css
+pnpm-lock.yaml

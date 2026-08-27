@@ -1,0 +1,20 @@
+{
+  "name": "chinese-novel",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "cd site && pnpm dev",
+    "build": "node site/site-build.mjs --full && cd site && pnpm build",
+    "lint": "eslint site/src site/site-build.mjs scripts",
+    "lint:fix": "eslint --fix site/src site/site-build.mjs scripts",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0",
+    "prettier-plugin-astro": "^0.14.0"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "游仙窟",
+  "bookType": "英雄传奇",
+  "chapterCount": 4,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "游仙窟 （一）",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "游仙窟  （二）",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "游仙窟 译文（一）",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "游仙窟 译文（二）",
+      "file": "003.md"
+    }
+  ]
+}

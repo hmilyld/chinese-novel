@@ -1,0 +1,22 @@
+{
+  "name": "明皇杂录",
+  "bookType": "其他",
+  "chapterCount": 3,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "卷上",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "卷下",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "补遗",
+      "file": "002.md"
+    }
+  ]
+}

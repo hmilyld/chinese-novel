@@ -1,0 +1,32 @@
+{
+  "name": "玄怪录",
+  "bookType": "其他",
+  "chapterCount": 5,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "卷一",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "卷二",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "卷三",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "卷四",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "辑佚",
+      "file": "004.md"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "name": "桂苑丛谈",
+  "bookType": "英雄传奇",
+  "chapterCount": 10,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "○张绰有道术",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "○太尉朱崖辩狱",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "○崔、张自称侠",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "○班支使解大明寺语",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "○方竹柱杖",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "○杜可均却鼠",
+      "file": "005.md"
+    },
+    {
+      "index": 6,
+      "title": "○李将军为左道所误",
+      "file": "006.md"
+    },
+    {
+      "index": 7,
+      "title": "○沙弥辩诗意",
+      "file": "007.md"
+    },
+    {
+      "index": 8,
+      "title": "○客饮甘露亭",
+      "file": "008.md"
+    },
+    {
+      "index": 9,
+      "title": "○史遗",
+      "file": "009.md"
+    }
+  ]
+}

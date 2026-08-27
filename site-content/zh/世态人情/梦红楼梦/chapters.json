@@ -1,0 +1,22 @@
+{
+  "name": "梦红楼梦",
+  "bookType": "世态人情",
+  "chapterCount": 3,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "序",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "初卷 第一回",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "初卷 第二回",
+      "file": "002.md"
+    }
+  ]
+}

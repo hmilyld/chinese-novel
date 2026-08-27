@@ -1,0 +1,27 @@
+{
+  "name": "大宋宣和遗事",
+  "bookType": "其他",
+  "chapterCount": 4,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "元集",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "亨集",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "利集",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "贞集",
+      "file": "003.md"
+    }
+  ]
+}

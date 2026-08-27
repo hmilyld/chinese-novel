@@ -1,0 +1,602 @@
+{
+  "name": "淞隐漫录",
+  "bookType": "其他",
+  "chapterCount": 119,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "自序",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "华姑",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "纪日本女子阿传事",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "许玉林匕首",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "仙人岛",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "小云轶事",
+      "file": "005.md"
+    },
+    {
+      "index": 6,
+      "title": "吴琼仙",
+      "file": "006.md"
+    },
+    {
+      "index": 7,
+      "title": "贞烈女子",
+      "file": "007.md"
+    },
+    {
+      "index": 8,
+      "title": "玉箫再世",
+      "file": "008.md"
+    },
+    {
+      "index": 9,
+      "title": "朱仙",
+      "file": "009.md"
+    },
+    {
+      "index": 10,
+      "title": "莲贞仙子",
+      "file": "010.md"
+    },
+    {
+      "index": 11,
+      "title": "徐麟士",
+      "file": "011.md"
+    },
+    {
+      "index": 12,
+      "title": "何蕙仙",
+      "file": "012.md"
+    },
+    {
+      "index": 13,
+      "title": "白秋英",
+      "file": "013.md"
+    },
+    {
+      "index": 14,
+      "title": "郑芷仙",
+      "file": "014.md"
+    },
+    {
+      "index": 15,
+      "title": "周贞女",
+      "file": "015.md"
+    },
+    {
+      "index": 16,
+      "title": "杨素雯",
+      "file": "016.md"
+    },
+    {
+      "index": 17,
+      "title": "冯香妍",
+      "file": "017.md"
+    },
+    {
+      "index": 18,
+      "title": "廖剑仙",
+      "file": "018.md"
+    },
+    {
+      "index": 19,
+      "title": "眉绣二校书合传",
+      "file": "019.md"
+    },
+    {
+      "index": 20,
+      "title": "徐双芙",
+      "file": "020.md"
+    },
+    {
+      "index": 21,
+      "title": "萧补烟",
+      "file": "021.md"
+    },
+    {
+      "index": 22,
+      "title": "陆碧珊",
+      "file": "022.md"
+    },
+    {
+      "index": 23,
+      "title": "龚绣鸾",
+      "file": "023.md"
+    },
+    {
+      "index": 24,
+      "title": "心侬词史",
+      "file": "024.md"
+    },
+    {
+      "index": 25,
+      "title": "闵玉叔",
+      "file": "025.md"
+    },
+    {
+      "index": 26,
+      "title": "凌波女史",
+      "file": "026.md"
+    },
+    {
+      "index": 27,
+      "title": "三梦桥",
+      "file": "027.md"
+    },
+    {
+      "index": 28,
+      "title": "黎纫秋",
+      "file": "028.md"
+    },
+    {
+      "index": 29,
+      "title": "鹃红女史",
+      "file": "029.md"
+    },
+    {
+      "index": 30,
+      "title": "毕志芸",
+      "file": "030.md"
+    },
+    {
+      "index": 31,
+      "title": "蓟素秋",
+      "file": "031.md"
+    },
+    {
+      "index": 32,
+      "title": "药娘",
+      "file": "032.md"
+    },
+    {
+      "index": 33,
+      "title": "仙谷",
+      "file": "033.md"
+    },
+    {
+      "index": 34,
+      "title": "何华珍",
+      "file": "034.md"
+    },
+    {
+      "index": 35,
+      "title": "胡琼华",
+      "file": "035.md"
+    },
+    {
+      "index": 36,
+      "title": "女侠",
+      "file": "036.md"
+    },
+    {
+      "index": 37,
+      "title": "李四娘",
+      "file": "037.md"
+    },
+    {
+      "index": 38,
+      "title": "盗女",
+      "file": "038.md"
+    },
+    {
+      "index": 39,
+      "title": "徐慧仙",
+      "file": "039.md"
+    },
+    {
+      "index": 40,
+      "title": "海外美人",
+      "file": "040.md"
+    },
+    {
+      "index": 41,
+      "title": "乩仙逸事",
+      "file": "041.md"
+    },
+    {
+      "index": 42,
+      "title": "笙村灵梦记",
+      "file": "042.md"
+    },
+    {
+      "index": 43,
+      "title": "白素秋",
+      "file": "043.md"
+    },
+    {
+      "index": 44,
+      "title": "阿怜阿爱",
+      "file": "044.md"
+    },
+    {
+      "index": 45,
+      "title": "四奇人合传",
+      "file": "045.md"
+    },
+    {
+      "index": 46,
+      "title": "蒋丽娟",
+      "file": "046.md"
+    },
+    {
+      "index": 47,
+      "title": "尹瑶仙",
+      "file": "047.md"
+    },
+    {
+      "index": 48,
+      "title": "冯佩伯",
+      "file": "048.md"
+    },
+    {
+      "index": 49,
+      "title": "诸晓屏",
+      "file": "049.md"
+    },
+    {
+      "index": 50,
+      "title": "李珊臣",
+      "file": "050.md"
+    },
+    {
+      "index": 51,
+      "title": "葛天民",
+      "file": "051.md"
+    },
+    {
+      "index": 52,
+      "title": "夜来香",
+      "file": "052.md"
+    },
+    {
+      "index": 53,
+      "title": "剑仙聂碧云",
+      "file": "053.md"
+    },
+    {
+      "index": 54,
+      "title": "徐仲瑛",
+      "file": "054.md"
+    },
+    {
+      "index": 55,
+      "title": "陆月舫",
+      "file": "055.md"
+    },
+    {
+      "index": 56,
+      "title": "王蟾香",
+      "file": "056.md"
+    },
+    {
+      "index": 57,
+      "title": "章志芸",
+      "file": "057.md"
+    },
+    {
+      "index": 58,
+      "title": "李韵兰",
+      "file": "058.md"
+    },
+    {
+      "index": 59,
+      "title": "鞠媚秋",
+      "file": "059.md"
+    },
+    {
+      "index": 60,
+      "title": "王莲舫",
+      "file": "060.md"
+    },
+    {
+      "index": 61,
+      "title": "胡姬嫣云小传",
+      "file": "061.md"
+    },
+    {
+      "index": 62,
+      "title": "杨秋舫",
+      "file": "062.md"
+    },
+    {
+      "index": 63,
+      "title": "娘再世",
+      "file": "063.md"
+    },
+    {
+      "index": 64,
+      "title": "媚梨小传",
+      "file": "064.md"
+    },
+    {
+      "index": 65,
+      "title": "秦倩娘",
+      "file": "065.md"
+    },
+    {
+      "index": 66,
+      "title": "悼红仙史",
+      "file": "066.md"
+    },
+    {
+      "index": 67,
+      "title": "姚云纤",
+      "file": "067.md"
+    },
+    {
+      "index": 68,
+      "title": "鲍琳娘",
+      "file": "068.md"
+    },
+    {
+      "index": 69,
+      "title": "返生草",
+      "file": "069.md"
+    },
+    {
+      "index": 70,
+      "title": "沈荔香",
+      "file": "070.md"
+    },
+    {
+      "index": 71,
+      "title": "蔚山庄",
+      "file": "071.md"
+    },
+    {
+      "index": 72,
+      "title": "海底奇境",
+      "file": "072.md"
+    },
+    {
+      "index": 73,
+      "title": "申江十美",
+      "file": "073.md"
+    },
+    {
+      "index": 74,
+      "title": "乐仲瞻",
+      "file": "074.md"
+    },
+    {
+      "index": 75,
+      "title": "严萼仙",
+      "file": "075.md"
+    },
+    {
+      "index": 76,
+      "title": "桥北十七名花谱",
+      "file": "076.md"
+    },
+    {
+      "index": 77,
+      "title": "任香初",
+      "file": "077.md"
+    },
+    {
+      "index": 78,
+      "title": "柳桥艳迹记",
+      "file": "078.md"
+    },
+    {
+      "index": 79,
+      "title": "骆蓉初",
+      "file": "079.md"
+    },
+    {
+      "index": 80,
+      "title": "红芸别墅",
+      "file": "080.md"
+    },
+    {
+      "index": 81,
+      "title": "陶兰石",
+      "file": "081.md"
+    },
+    {
+      "index": 82,
+      "title": "梦游地狱",
+      "file": "082.md"
+    },
+    {
+      "index": 83,
+      "title": "杞忧生",
+      "file": "083.md"
+    },
+    {
+      "index": 84,
+      "title": "陈霞仙",
+      "file": "084.md"
+    },
+    {
+      "index": 85,
+      "title": "倩云",
+      "file": "085.md"
+    },
+    {
+      "index": 86,
+      "title": "鹃红女史-成都",
+      "file": "086.md"
+    },
+    {
+      "index": 87,
+      "title": "蛇妖",
+      "file": "087.md"
+    },
+    {
+      "index": 88,
+      "title": "钱蕙荪",
+      "file": "088.md"
+    },
+    {
+      "index": 89,
+      "title": "清溪镜娘小传",
+      "file": "089.md"
+    },
+    {
+      "index": 90,
+      "title": "二十四花史-居士（上）",
+      "file": "090.md"
+    },
+    {
+      "index": 91,
+      "title": "二十四花史-居士（下）",
+      "file": "091.md"
+    },
+    {
+      "index": 92,
+      "title": "鹤媒",
+      "file": "092.md"
+    },
+    {
+      "index": 93,
+      "title": "十二花神",
+      "file": "093.md"
+    },
+    {
+      "index": 94,
+      "title": "合记珠琴事",
+      "file": "094.md"
+    },
+    {
+      "index": 95,
+      "title": "田荔裳",
+      "file": "095.md"
+    },
+    {
+      "index": 96,
+      "title": "吴也仙",
+      "file": "096.md"
+    },
+    {
+      "index": 97,
+      "title": "东部雏伶",
+      "file": "097.md"
+    },
+    {
+      "index": 98,
+      "title": "东瀛才女",
+      "file": "098.md"
+    },
+    {
+      "index": 99,
+      "title": "妙香",
+      "file": "099.md"
+    },
+    {
+      "index": 100,
+      "title": "三十六鸳鸯谱（上）",
+      "file": "100.md"
+    },
+    {
+      "index": 101,
+      "title": "三十六鸳鸯谱（中）",
+      "file": "101.md"
+    },
+    {
+      "index": 102,
+      "title": "三十六鸳鸯谱（下）",
+      "file": "102.md"
+    },
+    {
+      "index": 103,
+      "title": "名优类志",
+      "file": "103.md"
+    },
+    {
+      "index": 104,
+      "title": "徐笠云",
+      "file": "104.md"
+    },
+    {
+      "index": 105,
+      "title": "三怪",
+      "file": "105.md"
+    },
+    {
+      "index": 106,
+      "title": "月仙小传",
+      "file": "106.md"
+    },
+    {
+      "index": 107,
+      "title": "十鹿九回头记",
+      "file": "107.md"
+    },
+    {
+      "index": 108,
+      "title": "花蹊女史小传",
+      "file": "108.md"
+    },
+    {
+      "index": 109,
+      "title": "林士樾",
+      "file": "109.md"
+    },
+    {
+      "index": 110,
+      "title": "燕剑秋",
+      "file": "110.md"
+    },
+    {
+      "index": 111,
+      "title": "消夏湾",
+      "file": "111.md"
+    },
+    {
+      "index": 112,
+      "title": "白玉楼",
+      "file": "112.md"
+    },
+    {
+      "index": 113,
+      "title": "蓟素秋-吴江",
+      "file": "113.md"
+    },
+    {
+      "index": 114,
+      "title": "玉儿小传",
+      "file": "114.md"
+    },
+    {
+      "index": 115,
+      "title": "甘姬小传",
+      "file": "115.md"
+    },
+    {
+      "index": 116,
+      "title": "画船纪艳",
+      "file": "116.md"
+    },
+    {
+      "index": 117,
+      "title": "华胥生",
+      "file": "117.md"
+    },
+    {
+      "index": 118,
+      "title": "海外壮游",
+      "file": "118.md"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+---
+import { getCollection } from "astro:content";
+import type { Locale } from "../../../lib/data";
+import Base from "../../../layouts/Base.astro";
+import { translate } from "../../../i18n/translate";
+import { buildAuthors, BOOK_TYPE_LABEL } from "../../../lib/data";
+
+export async function getStaticPaths() {
+  const books = await getCollection("books");
+  const authors = buildAuthors(books);
+  const langs: Locale[] = ["zh", "zh-TW"];
+  const paths: { params: { lang: string; slug: string }; props: any }[] = [];
+  for (const lang of langs) {
+    for (const a of authors) {
+      paths.push({
+        params: { lang, slug: a.slug },
+        props: { locale: lang, author: a },
+      });
+    }
+  }
+  return paths;
+}
+
+const { locale, author } = Astro.props;
+const t = translate(locale);
+const base = `/${locale}`;
+const isZh = locale === "zh" || locale === "zh-TW";
+const dyn = author.dynasty || "未知";
+const dynText = dyn;
+const bio = author.bio;
+---
+
+<Base locale={locale} title={`${author.name} · ${t("author.title")}`}>
+  <section class="ahead">
+    <div class="ahead-seal" aria-hidden="true">笔</div>
+    <div class="ahead-main">
+      <div class="ahead-kicker">
+        {t("author.dynasty")} · {dynText}
+      </div>
+      <h1>{author.name}</h1>
+      <p class="ahead-sub">
+        {t("author.books").replace("{n}", String(author.bookCount))}
+      </p>
+    </div>
+  </section>
+
+  {bio ? (
+    <section class="abio">
+      <h2>{t("author.bioName")}</h2>
+      <p>{bio}</p>
+    </section>
+  ) : (
+    <section class="abio">
+      <h2>{t("author.bioName")}</h2>
+      <p class="abio-missing">{t("author.bioMissing")}</p>
+    </section>
+  )}
+
+  <section class="abooks">
+    <h2>{t("book.chapters")}</h2>
+    <ul class="abooks-grid">
+      {author.books.map((b) => (
+        <li>
+          <a class="abook" href={`${base}/book/${b.slug}`}>
+            <span class="abook-name">{b.name}</span>
+            <span class="abook-meta">
+              {BOOK_TYPE_LABEL(b.bookType, locale)} · {t("book.chapterTotal").replace("{n}", String(b.chapterCount))} · {t("book.words").replace("{n}", String(b.words))}
+            </span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+</Base>
+
+<style>
+  .ahead {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: var(--space-7) var(--space-5) var(--space-5);
+    display: flex;
+    gap: var(--space-5);
+    align-items: center;
+  }
+  .ahead-seal {
+    flex: 0 0 auto;
+    width: 4rem;
+    height: 4rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--cinnabar);
+    color: var(--paper);
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    border-radius: 4px;
+    box-shadow: 0 0 0 3px var(--bg), 0 0 0 4px var(--cinnabar),
+      var(--shadow-glow-cinnabar);
+  }
+  .ahead-kicker {
+    font-family: var(--font-latin-display);
+    font-style: italic;
+    letter-spacing: 0.1em;
+    color: var(--cinnabar);
+    margin-bottom: var(--space-2);
+    font-size: var(--fs-md);
+  }
+  .ahead h1 {
+    font-size: var(--fs-3xl);
+  }
+  .ahead-sub {
+    color: var(--text-dim);
+    margin-top: var(--space-2);
+  }
+  .abio {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: var(--space-5) var(--space-5);
+  }
+  .abio h2 {
+    font-size: var(--fs-2xl);
+    border-bottom: var(--hairline) var(--line);
+    padding-bottom: var(--space-3);
+    margin-bottom: var(--space-4);
+  }
+  .abio p {
+    font-size: var(--fs-md);
+    color: var(--text);
+    border-left: 3px solid var(--gold);
+    padding-left: var(--space-4);
+  }
+  .abio .abio-missing {
+    color: var(--text-dim);
+    font-style: italic;
+    border-left-color: var(--line);
+  }
+  .abooks {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: var(--space-5) var(--space-5) var(--space-8);
+  }
+  .abooks h2 {
+    font-size: var(--fs-2xl);
+    border-bottom: var(--hairline) var(--line);
+    padding-bottom: var(--space-3);
+    margin-bottom: var(--space-4);
+  }
+  .abooks-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-3);
+  }
+  .abook {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: var(--space-4);
+    border: var(--hairline) var(--line);
+    border-radius: var(--radius);
+    background: var(--bg-panel);
+    transition: box-shadow 0.25s ease, border-color 0.25s ease;
+  }
+  .abook:hover {
+    box-shadow: var(--shadow-card);
+    border-color: var(--cinnabar);
+  }
+  .abook-name {
+    font-family: var(--font-display);
+    font-size: var(--fs-lg);
+    color: var(--text);
+  }
+  .abook-meta {
+    color: var(--text-dim);
+    font-size: var(--fs-xs);
+  }
+</style>

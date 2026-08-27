@@ -1,0 +1,12 @@
+{
+  "name": "龙城录",
+  "bookType": "传奇小说",
+  "chapterCount": 1,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "全一章",
+      "file": "000.md"
+    }
+  ]
+}

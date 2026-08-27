@@ -1,0 +1,40 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Build output
+site/dist
+
+# Generated files
+site-content/zh-TW
+site-content/books.json
+
+# Translation artifacts (deleted, but ignore if recreated)
+scripts/.meta-parts
+scripts/glossaries
+scripts/translate-usage.jsonl
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Prettier cache
+.prettiercache
+
+# Temp
+/tmp

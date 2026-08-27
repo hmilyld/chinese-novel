@@ -1,0 +1,67 @@
+{
+  "name": "归莲梦",
+  "bookType": "世态人情",
+  "chapterCount": 12,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "第一回 降莲台空莲说法",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "第二回 劫柳寨细柳谈兵",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "第三回 假私情两番寻旧穴",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "第四回 真美艳一夜做新郎",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "第五回 无情争似有情痴",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "第六回 有情偏被无情恼",
+      "file": "005.md"
+    },
+    {
+      "index": 6,
+      "title": "第七回 续闺吟柳林藏丽质",
+      "file": "006.md"
+    },
+    {
+      "index": 7,
+      "title": "第八回 惊馆梦桃树作良缘",
+      "file": "007.md"
+    },
+    {
+      "index": 8,
+      "title": "第九回 妖狐偷镜丧全真",
+      "file": "008.md"
+    },
+    {
+      "index": 9,
+      "title": "第十回 老猿索书消勇略",
+      "file": "009.md"
+    },
+    {
+      "index": 10,
+      "title": "第十一回 柳营散处尚留一种痴情",
+      "file": "010.md"
+    },
+    {
+      "index": 11,
+      "title": "第十二回 莲梦醒时方见三生觉路",
+      "file": "011.md"
+    }
+  ]
+}

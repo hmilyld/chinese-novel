@@ -1,0 +1,122 @@
+{
+  "name": "二十四尊得道罗汉传",
+  "bookType": "其他",
+  "chapterCount": 23,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "第一尊     长眉罗汉",
+      "file": "000.md"
+    },
+    {
+      "index": 1,
+      "title": "第二尊     伏魔罗汉",
+      "file": "001.md"
+    },
+    {
+      "index": 2,
+      "title": "第三尊     聪耳罗汉",
+      "file": "002.md"
+    },
+    {
+      "index": 3,
+      "title": "第四尊     抱膝罗汉",
+      "file": "003.md"
+    },
+    {
+      "index": 4,
+      "title": "第五尊     劝善罗汉",
+      "file": "004.md"
+    },
+    {
+      "index": 5,
+      "title": "第六尊     捧经罗汉",
+      "file": "005.md"
+    },
+    {
+      "index": 6,
+      "title": "第七尊     降龙罗汉",
+      "file": "006.md"
+    },
+    {
+      "index": 7,
+      "title": "第八尊     绯衣罗汉",
+      "file": "007.md"
+    },
+    {
+      "index": 8,
+      "title": "第九尊     戏珠罗汉",
+      "file": "008.md"
+    },
+    {
+      "index": 9,
+      "title": "第十尊     飞锡罗汉",
+      "file": "009.md"
+    },
+    {
+      "index": 10,
+      "title": "第十一尊     杯渡罗汉",
+      "file": "010.md"
+    },
+    {
+      "index": 11,
+      "title": "第十二尊     振铎罗汉",
+      "file": "011.md"
+    },
+    {
+      "index": 12,
+      "title": "第十三尊     施笠罗汉",
+      "file": "012.md"
+    },
+    {
+      "index": 13,
+      "title": "第十四尊     持履罗汉",
+      "file": "013.md"
+    },
+    {
+      "index": 14,
+      "title": "第十五尊     伏虎罗汉",
+      "file": "014.md"
+    },
+    {
+      "index": 15,
+      "title": "第十六尊     换骨罗汉",
+      "file": "015.md"
+    },
+    {
+      "index": 16,
+      "title": "第十七尊     浣肠罗汉",
+      "file": "016.md"
+    },
+    {
+      "index": 17,
+      "title": "第十八尊     现相罗汉",
+      "file": "017.md"
+    },
+    {
+      "index": 18,
+      "title": "第十九尊     跨象罗汉",
+      "file": "018.md"
+    },
+    {
+      "index": 19,
+      "title": "第廿一尊     拊背罗汉",
+      "file": "019.md"
+    },
+    {
+      "index": 20,
+      "title": "第廿二尊     焚佛罗汉",
+      "file": "020.md"
+    },
+    {
+      "index": 21,
+      "title": "第廿三尊     赋花罗汉",
+      "file": "021.md"
+    },
+    {
+      "index": 22,
+      "title": "第廿四尊     却水罗汉",
+      "file": "022.md"
+    }
+  ]
+}
